@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSIL Annual Hackathon — Health Systems Innovation Lab</title>
+  <meta name="description" content="Build high‑value health systems with AI at the HSIL Annual Hackathon. A weekend sprint hosted by Harvard T.H. Chan School of Public Health’s Health Systems Innovation Lab." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; /* deep navy */
+      --fg:#0f172a; /* slate-900 */
+      --muted:#64748b; /* slate-500 */
+      --ink:#0f172a;
+      --brand:#0ea5a4; /* teal-500 */
+      --brand-2:#0284c7; /* sky-600 */
+      --ring:#e2e8f0;
+      --card:#ffffff;
+      --cta:#059669; /* emerald-600 */
+      --cta-ink:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--ink);}
+    a{color:var(--brand-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+    header.site{position:sticky;top:0;background:#fff7;backdrop-filter:blur(8px);border-bottom:1px solid var(--ring);z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;gap:.6rem;align-items:center;font-weight:700}
+    .brand-badge{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff}
+    .links{display:none;gap:1rem}
+    @media (min-width: 860px){.links{display:flex}}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--ring);background:#fff;border-radius:12px;height:42px;padding:0 .9rem;font-weight:600}
+    .btn.primary{background:var(--cta);border-color:var(--cta);color:var(--cta-ink)}
+    .btn.block{width:100%;justify-content:center}
+    /* Hero */
+    .hero{background:radial-gradient(1200px 600px at 10% -10%, #e0f2fe, transparent),radial-gradient(1000px 500px at 90% -20%, #ccfbf1, transparent),#fff}
+    .hero-grid{display:grid;gap:2rem;grid-template-columns:1fr}
+    @media (min-width: 980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    h1{font-size:clamp(2rem,3.6vw,3.75rem);line-height:1.05;margin:0}
+    .muted{color:var(--muted)}
+    .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
+    @media (min-width: 740px){.kpis{grid-template-columns:repeat(4,1fr)}}
+    .kpi{background:#fff;border:1px solid var(--ring);border-radius:16px;padding:1rem;text-align:center}
+    .kpi .big{font-size:1.8rem;font-weight:800}
+    /* Sections */
+    section{padding:72px 0}
+    h2{font-size:clamp(1.5rem,2.4vw,2.25rem);margin:0 0 10px 0}
+    p.lead{font-size:1.125rem;color:var(--muted);max-width:60ch}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-3{grid-template-columns:1fr}
+    @media (min-width: 900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:1.25rem}
+    .list{list-style:disc;padding-left:1.1rem;color:var(--muted)}
+    .timeline{display:grid;gap:1rem}
+    @media (min-width: 900px){.timeline{grid-template-columns:repeat(4,1fr)}}
+    .pill{display:inline-block;border-radius:9999px;border:1px solid var(--ring);padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
+    .foot{border-top:1px solid var(--ring);padding:36px 0;color:var(--muted)}
+    .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (min-width: 760px){.logos{grid-template-columns:repeat(4,1fr)}}
+    .logo{height:56px;border:1px dashed var(--ring);border-radius:14px;display:grid;place-items:center;color:var(--muted)}
+    .minititle{font-size:.85rem;font-weight:700;color:#0b172a;text-transform:uppercase;letter-spacing:.06em}
+    .note{font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="brand-badge">H</div>
+          <span>HSIL Hackathon</span>
+        </div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#how">How it works</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#previous">Previous Years</a>
+          <a href="#incubation">Incubation</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <a class="btn" href="#primer">Download Primer</a>
+          <a class="btn primary" href="#apply">Apply Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid" style="padding-top:64px;padding-bottom:32px">
+        <div>
+          <h1>Build High‑Value Health Systems with AI</h1>
+          <p class="lead" style="margin-top:12px">A global, impact‑driven hackathon hosted by Harvard T.H. Chan School of Public Health’s Health Systems Innovation Lab. Design, prototype, and pitch solutions that strengthen health systems for measurable outcomes.</p>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:14px">
+            <span class="pill">Hosted in Boston/Cambridge, MA</span>
+            <span class="pill">Hybrid hubs worldwide</span>
+            <span class="pill">Interdisciplinary • Impact‑driven</span>
+          </div>
+          <div style="display:flex;gap:.8rem;margin-top:18px;flex-wrap:wrap">
+            <a class="btn primary" href="#apply">Apply Now</a>
+            <a class="btn" href="#primer">Challenge Primer</a>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><div class="big">100+</div><div class="muted">Teams (2025)</div></div>
+            <div class="kpi"><div class="big">19</div><div class="muted">Global Hubs (2025)</div></div>
+            <div class="kpi"><div class="big">3</div><div class="muted">Days</div></div>
+            <div class="kpi"><div class="big">∞</div><div class="muted">Impact Pathways</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="minititle">What is the HSIL Annual Hackathon?</div>
+            <p class="muted" style="margin:.4rem 0 0 0">A catalyst for practical innovation that empowers participants to propose and build solutions improving healthcare delivery and system performance. The event nurtures unconventional thinking and bridges the gap between theory and practice—so solutions can translate into real‑world change.</p>
+          </div>
+          <div class="card" style="margin-top:12px">
+            <div class="minititle">Who joins?</div>
+            <p class="muted">Students, clinicians, engineers, designers, policy analysts, entrepreneurs, and operators—forming interdisciplinary teams at Harvard and partner hubs worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / THEMES (editable) -->
+    <section id="about">
+      <div class="container">
+        <h2>Focus Areas</h2>
+        <p class="lead">Each year’s theme centers on building high‑value health systems, with emphasis on digital health and responsible AI. Detailed challenge statements are shared in the Primer and at kickoff.</p>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card">
+            <h3 style="margin-top:0">System Resilience</h3>
+            <ul class="list">
+              <li>Governance & financing visibility</li>
+              <li>Resource allocation & surge capacity</li>
+              <li>Preparedness dashboards</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Equity & Public Health</h3>
+            <ul class="list">
+              <li>Access & outcome gap‑closing tools</li>
+              <li>Community signal & trust platforms</li>
+              <li>Bias monitoring & evaluation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Data → Outcomes</h3>
+            <ul class="list">
+              <li>Primary care capture & visualization</li>
+              <li>Care‑gap closure & referral loops</li>
+              <li>Outcome tracking & feedback</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" style="background:#f8fafc">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card">
+            <h3 style="margin-top:0">Day 1 — Kickoff</h3>
+            <ul class="list">
+              <li>Keynote & challenge deep‑dives</li>
+              <li>Team formation & problem framing</li>
+              <li>Mentor office hours</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Day 2 — Build</h3>
+            <ul class="list">
+              <li>Workshops: clinical, product, policy</li>
+              <li>Data labs & testing</li>
+              <li>Midpoint reviews</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">Day 3 — Demo Day</h3>
+            <ul class="list">
+              <li>Pitch polishing</li>
+              <li>Judging & showcases</li>
+              <li>Awards & next steps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE (editable) -->
+    <section id="timeline">
+      <div class="container">
+        <h2>Timeline</h2>
+        <p class="note">Exact dates and venues are announced with the application cycle. Subscribe below for the latest updates.</p>
+        <div class="timeline" style="margin-top:12px">
+          <div class="card"><div class="muted">Applications Open</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Rolling review</div></div>
+          <div class="card"><div class="muted">Info Sessions</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Virtual + in‑person</div></div>
+          <div class="card"><div class="muted">Hackathon Weekend</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">3‑day sprint</div></div>
+          <div class="card"><div class="muted">Demo Day</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Judges • Awards • Partners</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIOUS YEARS (grounded) -->
+    <section id="previous" style="background:#f8fafc">
+      <div class="container">
+        <h2>Previous Hackathons</h2>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card">
+            <h3 style="margin-top:0">2025</h3>
+            <p class="muted">“Building High‑Value Health Systems: Leveraging Artificial Intelligence”</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2024</h3>
+            <p class="muted">“Building High‑Value Health Systems: Harnessing Digital Health and Artificial Intelligence”</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2023</h3>
+            <p class="muted">“Hackathon Latin America: Digital Solutions for building High‑Value Health Systems”</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2022</h3>
+            <p class="muted">“Hackathon Africa: Digital Solutions to Transform Diabetes Health Care in Africa”</p>
+            <p class="muted">“Africa Health Conference: Building Resilience and the Future of Health in Africa”</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0">2021</h3>
+            <p class="muted">“Hackathon Asia: Type 1 Diabetes – Global Collaborative for Changing Diabetes in Children”</p>
+          </div>
+        </div>
+        <p class="note" style="margin-top:10px">In 2025, the HSIL Hackathon featured 100+ teams across 19 hubs worldwide.</p>
+      </div>
+    </section>
+
+    <!-- INCUBATION (grounded) -->
+    <section id="incubation">
+      <div class="container">
+        <h2>Venture Incubation Program</h2>
+        <p class="lead">Following the hackathon, HSIL runs a remote Venture Incubation Program to help selected teams progress from problem definition to MVP, business model, and funding strategy.</p>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card"><strong>Focus</strong><br><span class="muted">Problem/solution fit, GTM, MVP, and funding strategy</span></div>
+          <div class="card"><strong>Format</strong><br><span class="muted">Virtual cohorts with international mentors and partners</span></div>
+          <div class="card"><strong>Goal</strong><br><span class="muted">Accelerate health‑system improvements and measurable outcomes</span></div>
+        </div>
+        <p class="note" style="margin-top:10px">Details announced post‑hackathon with selected teams.</p>
+      </div>
+    </section>
+
+    <!-- SPONSORS / PARTNERS (placeholders) -->
+    <section id="partners" style="background:#f8fafc">
+      <div class="container">
+        <h2>Partners & Mentors</h2>
+        <p class="lead">Featuring health systems, agencies, providers, payers, startups, research labs, and investors.</p>
+        <div class="logos" style="margin-top:12px">
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+          <div class="logo">Logo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY / CONTACT -->
+    <section id="apply">
+      <div class="container">
+        <h2>Apply & Stay in the Loop</h2>
+        <div class="grid" style="grid-template-columns:1fr;gap:1rem">
+          <div class="card">
+            <p class="lead">Applications open soon. Share your email to receive deadlines, workshop invites, dataset drops, and mentor announcements.</p>
+            <form action="#" method="post" style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-top:.6rem">
+              <input type="email" name="email" placeholder="you@organization.org" aria-label="Email" style="height:48px;border:1px solid var(--ring);border-radius:12px;padding:0 .9rem;font-size:1rem" required>
+              <button class="btn primary" type="submit">Notify Me</button>
+            </form>
+            <p class="note" style="margin-top:.5rem">We’ll only email you about the HSIL Hackathon.</p>
+          </div>
+          <div class="card">
+            <div class="minititle">Contact</div>
+            <p class="muted">Questions about eligibility, partnerships, or data access? Email <a href="mailto:hsinnovationlab@hsph.harvard.edu">hsinnovationlab@hsph.harvard.edu</a>.</p>
+            <p class="muted" style="margin-top:.6rem"><strong>Location</strong><br>677 Huntington Avenue, Boston, MA 02115 — Building 1, 11th floor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <div class="brand">
+        <div class="brand-badge">H</div>
+        <span>HSIL Hackathon</span>
+      </div>
+      <div class="muted">© <span id="y"></span> Health Systems Innovation Lab — Harvard T.H. Chan School of Public Health</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+Component,Sub-component,Variable,Measure,Country,ISO Code,Year,Value
+Outputs,Healthcare services,Access to treatment,Lower Bound,Antigua and Barbuda,ATG,2020,37
+Outputs,Healthcare services,Access to treatment,Lower Bound,Australia,AUS,2020,24410
+Outputs,Healthcare services,Access to treatment,Lower Bound,Bahamas,BHS,2020,93
+Outputs,Healthcare services,Access to treatment,Lower Bound,Bangladesh,BGD,2020,34843
+Outputs,Healthcare services,Access to treatment,Lower Bound,Barbados,BRB,2020,137
+Outputs,Healthcare services,Access to treatment,Lower Bound,Botswana,BWA,2020,355
+Outputs,Healthcare services,Access to treatment,Lower Bound,Belize,BLZ,2020,51
+Outputs,Healthcare services,Access to treatment,Lower Bound,Solomon Islands,SLB,2020,91
+Outputs,Healthcare services,Access to treatment,Lower Bound,Brunei Darussalam,BRN,2020,172
+Outputs,Healthcare services,Access to treatment,Lower Bound,Cameroon,CMR,2020,4632
+Outputs,Healthcare services,Access to treatment,Lower Bound,Canada,CAN,2020,41693
+Outputs,Healthcare services,Access to treatment,Lower Bound,Sri Lanka,LKA,2020,6679
+Outputs,Healthcare services,Access to treatment,Lower Bound,Cyprus,CYP,2020,794
+Outputs,Healthcare services,Access to treatment,Lower Bound,Dominica,DMA,2020,34
+Outputs,Healthcare services,Access to treatment,Lower Bound,Fiji,FJI,2020,335
+Outputs,Healthcare services,Access to treatment,Lower Bound,Gabon,GAB,2020,315
+Outputs,Healthcare services,Access to treatment,Lower Bound,Gambia,GMB,2020,470
+Outputs,Healthcare services,Access to treatment,Lower Bound,Ghana,GHA,2020,6790
+Outputs,Healthcare services,Access to treatment,Lower Bound,Kiribati,KIR,2020,48
+Outputs,Healthcare services,Access to treatment,Lower Bound,Grenada,GRD,2020,61
+Outputs,Healthcare services,Access to treatment,Lower Bound,Guyana,GUY,2020,142
+Outputs,Healthcare services,Access to treatment,Lower Bound,India,IND,2020,320107
+Outputs,Healthcare services,Access to treatment,Lower Bound,Jamaica,JAM,2020,1200
+Outputs,Healthcare services,Access to treatment,Lower Bound,Kenya,KEN,2020,11154
+Outputs,Healthcare services,Access to treatment,Lower Bound,Lesotho,LSO,2020,451
+Outputs,Healthcare services,Access to treatment,Lower Bound,Malawi,MWI,2020,4556
+Outputs,Healthcare services,Access to treatment,Lower Bound,Malaysia,MYS,2020,12649
+Outputs,Healthcare services,Access to treatment,Lower Bound,Maldives,MDV,2020,90
+Outputs,Healthcare services,Access to treatment,Lower Bound,Malta,MLT,2020,430
+Outputs,Healthcare services,Access to treatment,Lower Bound,Mauritius,MUS,2020,634
+Outputs,Healthcare services,Access to treatment,Lower Bound,Mozambique,MOZ,2020,6790
+Outputs,Healthcare services,Access to treatment,Lower Bound,Namibia,NAM,2020,535
+Outputs,Healthcare services,Access to treatment,Lower Bound,Nauru,NRU,2020,1
+Outputs,Healthcare services,Access to treatment,Lower Bound,Vanuatu,VUT,2020,22
+Outputs,Healthcare services,Access to treatment,Lower Bound,New Zealand,NZL,2020,4213
+Outputs,Healthcare services,Access to treatment,Lower Bound,Nigeria,NGA,2020,31837
+Outputs,Healthcare services,Access to treatment,Lower Bound,Pakistan,PAK,2020,34468
+Outputs,Healthcare services,Access to treatment,Lower Bound,Papua New Guinea,PNG,2020,1685
+Outputs,Healthcare services,Access to treatment,Lower Bound,Rwanda,RWA,2020,2660
+Outputs,Healthcare services,Access to treatment,Lower Bound,Saint Kitts and Nevis,KNA,2020,16
+Outputs,Healthcare services,Access to treatment,Lower Bound,Saint Lucia,LCA,2020,49
+Outputs,Healthcare services,Access to treatment,Lower Bound,Saint Vincent and the Grenadines,VCT,2020,61
+Outputs,Healthcare services,Access to treatment,Lower Bound,Seychelles,SYC,2020,26
+Outputs,Healthcare services,Access to treatment,Lower Bound,Sierra Leone,SLE,2020,2031
+Outputs,Healthcare services,Access to treatment,Lower Bound,Singapore,SGP,2020,5538
+Outputs,Healthcare services,Access to treatment,Lower Bound,South Africa,ZAF,2020,27150
+Outputs,Healthcare services,Access to treatment,Lower Bound,Eswatini,SWZ,2020,295
+Outputs,Healthcare services,Access to treatment,Lower Bound,Togo,TGO,2020,1420
+Outputs,Healthcare services,Access to treatment,Lower Bound,Tonga,TON,2020,44
+Outputs,Healthcare services,Access to treatment,Lower Bound,Trinidad and Tobago,TTO,2020,576
+Outputs,Healthcare services,Access to treatment,Lower Bound,Tuvalu,TUV,2020,3
+Outputs,Healthcare services,Access to treatment,Lower Bound,Uganda,UGA,2020,9155
+Outputs,Healthcare services,Access to treatment,Lower Bound,United Kingdom,GBR,2020,98326
+Outputs,Healthcare services,Access to treatment,Lower Bound,United Republic of Tanzania,TZA,2020,15244
+Outputs,Healthcare services,Access to treatment,Lower Bound,Samoa,WSM,2020,80
+Outputs,Healthcare services,Access to treatment,Lower Bound,Zambia,ZMB,2020,2828
+Outputs,Healthcare services,Access to treatment,Mean,Pacific,,2020,41426.752
+Outputs,Healthcare services,Access to treatment,Mean,Antigua and Barbuda,ATG,2020,56.301
+Outputs,Healthcare services,Access to treatment,Mean,Australia,AUS,2020,27835.942
+Outputs,Healthcare services,Access to treatment,Mean,Bahamas,BHS,2020,222.098
+Outputs,Healthcare services,Access to treatment,Mean,Bangladesh,BGD,2020,56655.693
+Outputs,Healthcare services,Access to treatment,Mean,Barbados,BRB,2020,285.276
+Outputs,Healthcare services,Access to treatment,Mean,Botswana,BWA,2020,640.562
+Outputs,Healthcare services,Access to treatment,Mean,Belize,BLZ,2020,130.762
+Outputs,Healthcare services,Access to treatment,Mean,Solomon Islands,SLB,2020,380.975
+Outputs,Healthcare services,Access to treatment,Mean,Brunei Darussalam,BRN,2020,302.067
+Outputs,Healthcare services,Access to treatment,Mean,Cameroon,CMR,2020,9163.319
+Outputs,Healthcare services,Access to treatment,Mean,Canada,CAN,2020,45495.428
+Outputs,Healthcare services,Access to treatment,Mean,Sri Lanka,LKA,2020,8456.614
+Outputs,Healthcare services,Access to treatment,Mean,Cyprus,CYP,2020,1106.689
+Outputs,Healthcare services,Access to treatment,Mean,Dominica,DMA,2020,51.505
+Outputs,Healthcare services,Access to treatment,Mean,Fiji,FJI,2020,522.026
+Outputs,Healthcare services,Access to treatment,Mean,Gabon,GAB,2020,787.482
+Outputs,Healthcare services,Access to treatment,Mean,Gambia,GMB,2020,867.291
+Outputs,Healthcare services,Access to treatment,Mean,Ghana,GHA,2020,12173.184
+Outputs,Healthcare services,Access to treatment,Mean,Kiribati,KIR,2020,81.54
+Outputs,Healthcare services,Access to treatment,Mean,Grenada,GRD,2020,88.007
+Outputs,Healthcare services,Access to treatment,Mean,Guyana,GUY,2020,315.068
+Outputs,Healthcare services,Access to treatment,Mean,India,IND,2020,398605.861
+Outputs,Healthcare services,Access to treatment,Mean,Jamaica,JAM,2020,1732.93
+Outputs,Healthcare services,Access to treatment,Mean,Kenya,KEN,2020,16532.877
+Outputs,Healthcare services,Access to treatment,Mean,Lesotho,LSO,2020,954.212
+Outputs,Healthcare services,Access to treatment,Mean,Malawi,MWI,2020,8415.394
+Outputs,Healthcare services,Access to treatment,Mean,Malaysia,MYS,2020,14906.225
+Outputs,Healthcare services,Access to treatment,Mean,Maldives,MDV,2020,152.776
+Outputs,Healthcare services,Access to treatment,Mean,Malta,MLT,2020,646.145
+Outputs,Healthcare services,Access to treatment,Mean,Mauritius,MUS,2020,933.908
+Outputs,Healthcare services,Access to treatment,Mean,Mozambique,MOZ,2020,10918.47
+Outputs,Healthcare services,Access to treatment,Mean,Namibia,NAM,2020,921.799
+Outputs,Healthcare services,Access to treatment,Mean,Nauru,NRU,2020,4.757
+Outputs,Healthcare services,Access to treatment,Mean,Vanuatu,VUT,2020,199.509
+Outputs,Healthcare services,Access to treatment,Mean,New Zealand,NZL,2020,5306.586
+Outputs,Healthcare services,Access to treatment,Mean,Nigeria,NGA,2020,50137.33
+Outputs,Healthcare services,Access to treatment,Mean,Pakistan,PAK,2020,48941.888
+Outputs,Healthcare services,Access to treatment,Mean,Papua New Guinea,PNG,2020,6803.474
+Outputs,Healthcare services,Access to treatment,Mean,Rwanda,RWA,2020,4838.331
+Outputs,Healthcare services,Access to treatment,Mean,Saint Kitts and Nevis,KNA,2020,28.149
+Outputs,Healthcare services,Access to treatment,Mean,Saint Lucia,LCA,2020,135.897
+Outputs,Healthcare services,Access to treatment,Mean,Saint Vincent and the Grenadines,VCT,2020,87.76
+Outputs,Healthcare services,Access to treatment,Mean,Seychelles,SYC,2020,46.558
+Outputs,Healthcare services,Access to treatment,Mean,Sierra Leone,SLE,2020,2759.226
+Outputs,Healthcare services,Access to treatment,Mean,Singapore,SGP,2020,6876.911
+Outputs,Healthcare services,Access to treatment,Mean,South Africa,ZAF,2020,38303.154
+Outputs,Healthcare services,Access to treatment,Mean,Eswatini,SWZ,2020,518.475
+Outputs,Healthcare services,Access to treatment,Mean,Togo,TGO,2020,2942.363
+Outputs,Healthcare services,Access to treatment,Mean,Tonga,TON,2020,102.607
+Outputs,Healthcare services,Access to treatment,Mean,Trinidad and Tobago,TTO,2020,899.707
+Outputs,Healthcare services,Access to treatment,Mean,Tuvalu,TUV,2020,11.296
+Outputs,Healthcare services,Access to treatment,Mean,Uganda,UGA,2020,13543.047
+Outputs,Healthcare services,Access to treatment,Mean,United Kingdom,GBR,2020,105312.298
+Outputs,Healthcare services,Access to treatment,Mean,United Republic of Tanzania,TZA,2020,23412.342
+Outputs,Healthcare services,Access to treatment,Mean,Samoa,WSM,2020,178.04
+Outputs,Healthcare services,Access to treatment,Mean,Zambia,ZMB,2020,4698.934
+Outputs,Healthcare services,Access to treatment,Upper Bound,Pacific,,2020,53557
+Outputs,Healthcare services,Access to treatment,Upper Bound,Antigua and Barbuda,ATG,2020,79
+Outputs,Healthcare services,Access to treatment,Upper Bound,Australia,AUS,2020,32119
+Outputs,Healthcare services,Access to treatment,Upper Bound,Bahamas,BHS,2020,441
+Outputs,Healthcare services,Access to treatment,Upper Bound,Bangladesh,BGD,2020,86975
+Outputs,Healthcare services,Access to treatment,Upper Bound,Barbados,BRB,2020,496
+Outputs,Healthcare services,Access to treatment,Upper Bound,Botswana,BWA,2020,1067
+Outputs,Healthcare services,Access to treatment,Upper Bound,Belize,BLZ,2020,271
+Outputs,Healthcare services,Access to treatment,Upper Bound,Solomon Islands,SLB,2020,1008
+Outputs,Healthcare services,Access to treatment,Upper Bound,Brunei Darussalam,BRN,2020,487
+Outputs,Healthcare services,Access to treatment,Upper Bound,Cameroon,CMR,2020,15934
+Outputs,Healthcare services,Access to treatment,Upper Bound,Canada,CAN,2020,49323
+Outputs,Healthcare services,Access to treatment,Upper Bound,Sri Lanka,LKA,2020,11694
+Outputs,Healthcare services,Access to treatment,Upper Bound,Cyprus,CYP,2020,1533
+Outputs,Healthcare services,Access to treatment,Upper Bound,Dominica,DMA,2020,70
+Outputs,Healthcare services,Access to treatment,Upper Bound,Fiji,FJI,2020,789
+Outputs,Healthcare services,Access to treatment,Upper Bound,Gabon,GAB,2020,1663
+Outputs,Healthcare services,Access to treatment,Upper Bound,Gambia,GMB,2020,1516
+Outputs,Healthcare services,Access to treatment,Upper Bound,Ghana,GHA,2020,20833
+Outputs,Healthcare services,Access to treatment,Upper Bound,Kiribati,KIR,2020,125
+Outputs,Healthcare services,Access to treatment,Upper Bound,Grenada,GRD,2020,117
+Outputs,Healthcare services,Access to treatment,Upper Bound,Guyana,GUY,2020,617
+Outputs,Healthcare services,Access to treatment,Upper Bound,India,IND,2020,536740
+Outputs,Healthcare services,Access to treatment,Upper Bound,Jamaica,JAM,2020,2372
+Outputs,Healthcare services,Access to treatment,Upper Bound,Kenya,KEN,2020,24667
+Outputs,Healthcare services,Access to treatment,Upper Bound,Lesotho,LSO,2020,1830
+Outputs,Healthcare services,Access to treatment,Upper Bound,Malawi,MWI,2020,14166
+Outputs,Healthcare services,Access to treatment,Upper Bound,Malaysia,MYS,2020,17149
+Outputs,Healthcare services,Access to treatment,Upper Bound,Maldives,MDV,2020,252
+Outputs,Healthcare services,Access to treatment,Upper Bound,Malta,MLT,2020,946
+Outputs,Healthcare services,Access to treatment,Upper Bound,Mauritius,MUS,2020,1370
+Outputs,Healthcare services,Access to treatment,Upper Bound,Mozambique,MOZ,2020,16051
+Outputs,Healthcare services,Access to treatment,Upper Bound,Namibia,NAM,2020,1387
+Outputs,Healthcare services,Access to treatment,Upper Bound,Nauru,NRU,2020,10
+Outputs,Healthcare services,Access to treatment,Upper Bound,Vanuatu,VUT,2020,707
+Outputs,Healthcare services,Access to treatment,Upper Bound,New Zealand,NZL,2020,6601
+Outputs,Healthcare services,Access to treatment,Upper Bound,Nigeria,NGA,2020,75582
+Outputs,Healthcare services,Access to treatment,Upper Bound,Pakistan,PAK,2020,68991
+Outputs,Healthcare services,Access to treatment,Upper Bound,Papua New Guinea,PNG,2020,17775
+Outputs,Healthcare services,Access to treatment,Upper Bound,Rwanda,RWA,2020,8313
+Outputs,Healthcare services,Access to treatment,Upper Bound,Saint Kitts and Nevis,KNA,2020,43
+Outputs,Healthcare services,Access to treatment,Upper Bound,Saint Lucia,LCA,2020,296
+Outputs,Healthcare services,Access to treatment,Upper Bound,Saint Vincent and the Grenadines,VCT,2020,120
+Outputs,Healthcare services,Access to treatment,Upper Bound,Seychelles,SYC,2020,79
+Outputs,Healthcare services,Access to treatment,Upper Bound,Sierra Leone,SLE,2020,3374
+Outputs,Healthcare services,Access to treatment,Upper Bound,Singapore,SGP,2020,8405
+Outputs,Healthcare services,Access to treatment,Upper Bound,South Africa,ZAF,2020,51185
+Outputs,Healthcare services,Access to treatment,Upper Bound,Eswatini,SWZ,2020,805
+Outputs,Healthcare services,Access to treatment,Upper Bound,Togo,TGO,2020,5661
+Outputs,Healthcare services,Access to treatment,Upper Bound,Tonga,TON,2020,204
+Outputs,Healthcare services,Access to treatment,Upper Bound,Trinidad and Tobago,TTO,2020,1352
+Outputs,Healthcare services,Access to treatment,Upper Bound,Tuvalu,TUV,2020,24
+Outputs,Healthcare services,Access to treatment,Upper Bound,Uganda,UGA,2020,18259
+Outputs,Healthcare services,Access to treatment,Upper Bound,United Kingdom,GBR,2020,111785
+Outputs,Healthcare services,Access to treatment,Upper Bound,United Republic of Tanzania,TZA,2020,31655
+Outputs,Healthcare services,Access to treatment,Upper Bound,Samoa,WSM,2020,361
+,Healthcare services,Access to treatment,Upper Bound,Zambia,ZMB,2020,7502

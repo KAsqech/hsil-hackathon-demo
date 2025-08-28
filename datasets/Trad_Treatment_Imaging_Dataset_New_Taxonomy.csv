@@ -1,0 +1,172 @@
+Component,Sub-component,Variable,Measure,Country,ISO Code,Year,Value
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Caribbean and Americas,CRB,2020,0.611682681
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Antigua and Barbuda,ATG,2020,0.532374101
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Australia,AUS,2020,0.577736131
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Bahamas,BHS,2020,0.557872784
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Bangladesh,BGD,2020,0.126926208
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Barbados,BRB,2020,0.550096339
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Botswana,BWA,2020,0.176966292
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Belize,BLZ,2020,0.469879518
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Solomon Islands,SLB,2020,0.002293578
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Brunei Darussalam,BRN,2020,0.438373571
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Cameroon,CMR,2020,0.008253205
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Canada,CAN,2020,0.610736494
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Sri Lanka,LKA,2020,0.224499055
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Cyprus,CYP,2020,0.5987994
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Dominica,DMA,2020,0.45323741
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Fiji,FJI,2020,0.262993763
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Gabon,GAB,2020,0.281727575
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Gambia,GMB,2020,0
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Ghana,GHA,2020,0.004275738
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Kiribati,KIR,2020,0
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Grenada,GRD,2020,0.464454976
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Guyana,GUY,2020,0.524160524
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,India,IND,2020,0.253473399
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Jamaica,JAM,2020,0.513863216
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Kenya,KEN,2020,0.023739652
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Lesotho,LSO,2020,0.004766444
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Malawi,MWI,2020,0.001198861
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Malaysia,MYS,2020,0.418814478
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Maldives,MDV,2020,0.318007663
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Malta,MLT,2020,0.548821549
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Mauritius,MUS,2020,0.398373984
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Mozambique,MOZ,2020,0.001241601
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Namibia,NAM,2020,0.23566879
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Nauru,NRU,2020,0
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Vanuatu,VUT,2020,0
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,New Zealand,NZL,2020,0.589829811
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Nigeria,NGA,2020,0.01779864
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Pakistan,PAK,2020,0.126318583
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Papua New Guinea,PNG,2020,0.001790926
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Rwanda,RWA,2020,0.001152871
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Saint Kitts and Nevis,KNA,2020,0.523809524
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Saint Lucia,LCA,2020,0.482248521
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Saint Vincent and the Grenadines,VCT,2020,0.443902439
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Seychelles,SYC,2020,0.405405405
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Sierra Leone,SLE,2020,0.000903342
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Singapore,SGP,2020,0.452297577
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,South Africa,ZAF,2020,0.228333806
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Eswatini,SWZ,2020,0.006525285
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Togo,TGO,2020,0.001406964
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Tonga,TON,2020,0.031496063
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Trinidad and Tobago,TTO,2020,0.578192876
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Tuvalu,TUV,2020,0
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Uganda,UGA,2020,0.001791427
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,United Kingdom,GBR,2020,0.553147086
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,United Republic of Tanzania,TZA,2020,0.002218417
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Samoa,WSM,2020,0.020547945
+Outputs,Personal healthcare services,Traditional treatment imaging,Lower Bound,Zambia,ZMB,2020,0.052992234
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Caribbean and Americas,CRB,2020,0.625178882
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Antigua and Barbuda,ATG,2020,0.637003661
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Australia,AUS,2020,0.62377237
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Bahamas,BHS,2020,0.662295508
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Bangladesh,BGD,2020,0.277448222
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Barbados,BRB,2020,0.632380867
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Botswana,BWA,2020,0.455196272
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Belize,BLZ,2020,0.556033296
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Solomon Islands,SLB,2020,0.337349829
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Brunei Darussalam,BRN,2020,0.516166001
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Cameroon,CMR,2020,0.344931196
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Canada,CAN,2020,0.626839872
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Sri Lanka,LKA,2020,0.394120254
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Cyprus,CYP,2020,0.650064399
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Dominica,DMA,2020,0.560071782
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Fiji,FJI,2020,0.520530552
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Gabon,GAB,2020,0.436804512
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Gambia,GMB,2020,0.144317713
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Ghana,GHA,2020,0.319037378
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Kiribati,KIR,2020,0.307034399
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Grenada,GRD,2020,0.556996183
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Guyana,GUY,2020,0.597440395
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,India,IND,2020,0.393700166
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Jamaica,JAM,2020,0.577836331
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Kenya,KEN,2020,0.345351697
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Lesotho,LSO,2020,0.29666641
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Malawi,MWI,2020,0.20817483
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Malaysia,MYS,2020,0.470665859
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Maldives,MDV,2020,0.50478671
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Malta,MLT,2020,0.588852837
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Mauritius,MUS,2020,0.497349296
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Mozambique,MOZ,2020,0.19884883
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Namibia,NAM,2020,0.517762504
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Nauru,NRU,2020,0.47071509
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Vanuatu,VUT,2020,0.309977864
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,New Zealand,NZL,2020,0.640314382
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Nigeria,NGA,2020,0.393431729
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Pakistan,PAK,2020,0.368307625
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Papua New Guinea,PNG,2020,0.293517425
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Rwanda,RWA,2020,0.197000237
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Saint Kitts and Nevis,KNA,2020,0.646319692
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Saint Lucia,LCA,2020,0.583127282
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Saint Vincent and the Grenadines,VCT,2020,0.540789204
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Seychelles,SYC,2020,0.540854837
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Sierra Leone,SLE,2020,0.181207093
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Singapore,SGP,2020,0.52292993
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,South Africa,ZAF,2020,0.454300984
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Eswatini,SWZ,2020,0.322195421
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Togo,TGO,2020,0.186960453
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Tonga,TON,2020,0.390176839
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Trinidad and Tobago,TTO,2020,0.656007641
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Tuvalu,TUV,2020,0.394780892
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Uganda,UGA,2020,0.195176864
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,United Kingdom,GBR,2020,0.568291435
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,United Republic of Tanzania,TZA,2020,0.210954692
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Samoa,WSM,2020,0.392002583
+Outputs,Personal healthcare services,Traditional treatment imaging,Mean,Zambia,ZMB,2020,0.37203565
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Caribbean and Americas,CRB,2020,0.642870009
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Antigua and Barbuda,ATG,2020,0.732394366
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Australia,AUS,2020,0.667093
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Bahamas,BHS,2020,0.766884532
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Bangladesh,BGD,2020,0.35480494
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Barbados,BRB,2020,0.734627832
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Botswana,BWA,2020,0.573717949
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Belize,BLZ,2020,0.661654135
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Solomon Islands,SLB,2020,0.543520309
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Brunei Darussalam,BRN,2020,0.599678457
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Cameroon,CMR,2020,0.543614719
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Canada,CAN,2020,0.644995843
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Sri Lanka,LKA,2020,0.479656384
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Cyprus,CYP,2020,0.686701728
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Dominica,DMA,2020,0.67961165
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Fiji,FJI,2020,0.617219917
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Gabon,GAB,2020,0.573770492
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Gambia,GMB,2020,0.343073593
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Ghana,GHA,2020,0.441313487
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Kiribati,KIR,2020,0.526315789
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Grenada,GRD,2020,0.653465347
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Guyana,GUY,2020,0.676190476
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,India,IND,2020,0.488573021
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Jamaica,JAM,2020,0.664707265
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Kenya,KEN,2020,0.48528476
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Lesotho,LSO,2020,0.48490566
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Malawi,MWI,2020,0.460286379
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Malaysia,MYS,2020,0.523830094
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Maldives,MDV,2020,0.602536998
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Malta,MLT,2020,0.629150253
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Mauritius,MUS,2020,0.591675637
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Mozambique,MOZ,2020,0.439103991
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Namibia,NAM,2020,0.643835616
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Nauru,NRU,2020,0.833333333
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Vanuatu,VUT,2020,0.513513514
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,New Zealand,NZL,2020,0.687601958
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Nigeria,NGA,2020,0.532634612
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Pakistan,PAK,2020,0.460939361
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Papua New Guinea,PNG,2020,0.465186916
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Rwanda,RWA,2020,0.420801733
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Saint Kitts and Nevis,KNA,2020,0.761904762
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Saint Lucia,LCA,2020,0.701421801
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Saint Vincent and the Grenadines,VCT,2020,0.644578313
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Seychelles,SYC,2020,0.666666667
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Sierra Leone,SLE,2020,0.391377005
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Singapore,SGP,2020,0.585342334
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,South Africa,ZAF,2020,0.566518436
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Eswatini,SWZ,2020,0.533450704
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Togo,TGO,2020,0.419317119
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Tonga,TON,2020,0.548672566
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Trinidad and Tobago,TTO,2020,0.733333333
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Tuvalu,TUV,2020,0.705882353
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Uganda,UGA,2020,0.436722751
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,United Kingdom,GBR,2020,0.591469894
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,United Republic of Tanzania,TZA,2020,0.4566183
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Samoa,WSM,2020,0.528301887
+Outputs,Personal healthcare services,Traditional treatment imaging,Upper Bound,Zambia,ZMB,2020,0.524820528
