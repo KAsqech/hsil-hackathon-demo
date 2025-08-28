@@ -63,6 +63,15 @@
     .logo{height:56px;border:1px dashed var(--ring);border-radius:14px;display:grid;place-items:center;color:var(--muted)}
     .minititle{font-size:.85rem;font-weight:700;color:#0b172a;text-transform:uppercase;letter-spacing:.06em}
     .note{font-size:.9rem;color:var(--muted)}
+      /* Hubs */
+    .hub-grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width: 680px){.hub-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (min-width: 980px){.hub-grid{grid-template-columns:repeat(3,1fr)}}
+    .hub-card{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;border:1px solid var(--ring);background:#fff;border-radius:16px;padding:12px}
+    .hub-logo{width:72px;height:72px;border-radius:12px;display:grid;place-items:center;background:#f1f5f9;border:1px dashed var(--ring);overflow:hidden}
+    .hub-logo img{width:100%;height:100%;object-fit:contain}
+    .hub-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+    .select{height:48px;border:1px solid var(--ring);border-radius:12px;padding:0 .9rem;font-size:1rem;background:#fff}
   </style>
 </head>
 <body>
@@ -79,6 +88,7 @@
           <a href="#timeline">Timeline</a>
           <a href="#previous">Previous Years</a>
           <a href="#incubation">Incubation</a>
+          <a href="#hubs">Hubs</a>
           <a href="#faq">FAQ</a>
         </div>
         <div>
@@ -94,19 +104,23 @@
     <section class="hero">
       <div class="container hero-grid" style="padding-top:64px;padding-bottom:32px">
         <div>
-          <h1>Build High‑Value Health Systems with AI</h1>
-          <p class="lead" style="margin-top:12px">A global, impact‑driven hackathon hosted by Harvard T.H. Chan School of Public Health’s Health Systems Innovation Lab. Design, prototype, and pitch solutions that strengthen health systems for measurable outcomes.</p>
+          <h1>Building High‑Value Health Systems: Harnessing AI for Global Impact</h1>
+          <p class="lead" style="margin-top:12px">Where the world’s best minds reengineer the future of care. Join the 7th Edition to design, prototype, and pitch technology‑powered health system solutions with real pathways to scale.</p>
           <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:14px">
-            <span class="pill">Hosted in Boston/Cambridge, MA</span>
-            <span class="pill">Hybrid hubs worldwide</span>
+            <span class="pill">Boston Hub + 40+ global hubs</span>
             <span class="pill">Interdisciplinary • Impact‑driven</span>
+            <span class="pill">Innovation Pipeline → Incubation → Demo Day</span>
           </div>
           <div style="display:flex;gap:.8rem;margin-top:18px;flex-wrap:wrap">
             <a class="btn primary" href="#apply">Apply Now</a>
             <a class="btn" href="#primer">Challenge Primer</a>
           </div>
           <div class="kpis">
-            <div class="kpi"><div class="big">100+</div><div class="muted">Teams (2025)</div></div>
+            <div class="kpi"><div class="big">6000+</div><div class="muted">Hackers to date</div></div>
+            <div class="kpi"><div class="big">250+</div><div class="muted">Teams formed</div></div>
+            <div class="kpi"><div class="big">50+</div><div class="muted">Countries</div></div>
+            <div class="kpi"><div class="big">40+</div><div class="muted">Institutions</div></div>
+          </div><div class="muted">Teams (2025)</div></div>
             <div class="kpi"><div class="big">19</div><div class="muted">Global Hubs (2025)</div></div>
             <div class="kpi"><div class="big">3</div><div class="muted">Days</div></div>
             <div class="kpi"><div class="big">∞</div><div class="muted">Impact Pathways</div></div>
@@ -195,13 +209,14 @@
     <!-- TIMELINE (editable) -->
     <section id="timeline">
       <div class="container">
-        <h2>Timeline</h2>
-        <p class="note">Exact dates and venues are announced with the application cycle. Subscribe below for the latest updates.</p>
+        <h2>Timeline — 2026 (7th Edition)</h2>
+        <p class="note">Dates reflect the 2026 Innovation Pipeline schedule. Local hubs may run supplementary sessions.</p>
         <div class="timeline" style="margin-top:12px">
-          <div class="card"><div class="muted">Applications Open</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Rolling review</div></div>
-          <div class="card"><div class="muted">Info Sessions</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Virtual + in‑person</div></div>
-          <div class="card"><div class="muted">Hackathon Weekend</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">3‑day sprint</div></div>
-          <div class="card"><div class="muted">Demo Day</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">TBA</div><div class="note" style="margin-top:.25rem">Judges • Awards • Partners</div></div>
+          <div class="card"><div class="muted">Hackathon Weekend</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">April 10–11, 2026</div><div class="note" style="margin-top:.25rem">2 days • Team formation, build sprint, hub judging</div></div>
+          <div class="card"><div class="muted">Venture Building Bootcamp 1</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">April 20 – May 1, 2026</div><div class="note" style="margin-top:.25rem">Hub winners → 50 venture teams</div></div>
+          <div class="card"><div class="muted">HSIL Judging + Bootcamp 2</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">May 4 – May 15, 2026</div><div class="note" style="margin-top:.25rem">20 venture teams → 10 finalists</div></div>
+          <div class="card"><div class="muted">Global Judging Window</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">May 18 – June 12, 2026</div><div class="note" style="margin-top:.25rem">Finalist refinement + global panel</div></div>
+          <div class="card"><div class="muted">Demo Day</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">June 19, 2026</div><div class="note" style="margin-top:.25rem">Pitches to investors • Awards</div></div>
         </div>
       </div>
     </section>
@@ -250,8 +265,130 @@
         <p class="note" style="margin-top:10px">Details announced post‑hackathon with selected teams.</p>
       </div>
     </section>
+    <!-- COLLABORATING HUBS -->
+    <section id="hubs" style="background:#f8fafc">
+      <div class="container">
+        <h2>Collaborating Hubs</h2>
+        <p class="lead">Partner institutions host local build sites across five continents. Team members from each hub can enter their dedicated workspace below.</p>
+
+        <!-- Quick access selector -->
+        <div class="card" style="margin-top:12px">
+          <div class="minititle">Jump to your hub space</div>
+          <div style="display:grid;grid-template-columns:1fr auto;gap:.6rem;margin-top:.6rem;max-width:820px">
+            <select id="hubSelect" class="select" aria-label="Select your hub">
+              <option value="" selected>Select a hub…</option>
+              <option value="/hubs/boston/">Boston, USA</option>
+              <option value="/hubs/buenos-aires/">Buenos Aires, Argentina</option>
+              <option value="/hubs/sao-paulo/">São Paulo, Brazil</option>
+              <option value="/hubs/toronto/">Toronto, Canada</option>
+              <option value="/hubs/santiago/">Santiago de Chile, Chile</option>
+              <option value="/hubs/beijing/">Beijing, China</option>
+              <option value="/hubs/bogota/">Bogotá, Colombia</option>
+              <option value="/hubs/johannesburg/">Johannesburg, South Africa</option>
+              <option value="/hubs/jeddah/">Jeddah, Saudi Arabia</option>
+              <option value="/hubs/punjab/">Punjab, India</option>
+              <option value="/hubs/monterrey/">Monterrey, Mexico</option>
+              <option value="/hubs/singapore/">Singapore, Singapore</option>
+              <option value="/hubs/cape-town/">Cape Town, South Africa</option>
+              <option value="/hubs/istanbul/">Istanbul, Türkiye</option>
+              <option value="/hubs/london/">London, UK</option>
+              <option value="/hubs/hanoi/">Hanoi, Vietnam</option>
+              <option value="/hubs/islamabad/">Islamabad, Pakistan</option>
+              <option value="/hubs/sydney/">Sydney, Australia</option>
+              <option value="/hubs/dhaka/">Dhaka, Bangladesh</option>
+              <option value="/hubs/accra/">Accra, Ghana</option>
+              <option value="/hubs/abuja/">Abuja, Nigeria</option>
+              <option value="/hubs/yaounde/">Yaoundé, Cameroon</option>
+              <option value="/hubs/monrovia/">Monrovia, Liberia</option>
+              <option value="/hubs/kampala/">Kampala, Uganda</option>
+              <option value="/hubs/nairobi/">Nairobi, Kenya</option>
+              <option value="/hubs/dar-es-salaam/">Dar es Salaam, Tanzania</option>
+              <option value="/hubs/kigali/">Kigali, Rwanda</option>
+              <option value="/hubs/addis-ababa/">Addis Ababa, Ethiopia</option>
+              <option value="/hubs/cairo/">Cairo, Egypt</option>
+              <option value="/hubs/rabat/">Rabat, Morocco</option>
+              <option value="/hubs/windhoek/">Windhoek, Namibia</option>
+              <option value="/hubs/lima/">Lima, Peru</option>
+              <option value="/hubs/manama/">Manama, Bahrain</option>
+              <option value="/hubs/jakarta/">Jakarta, Indonesia</option>
+              <option value="/hubs/tokyo/">Tokyo, Japan</option>
+              <option value="/hubs/kathmandu/">Kathmandu, Nepal</option>
+              <option value="/hubs/abu-dhabi/">Abu Dhabi, United Arab Emirates</option>
+              <option value="/hubs/muscat/">Muscat, Oman</option>
+              <option value="/hubs/berlin/">Berlin, Germany</option>
+              <option value="/hubs/algiers/">Algiers, Algeria</option>
+              <option value="/hubs/rome/">Rome, Italy</option>
+            </select>
+            <button id="hubGo" class="btn primary" type="button">Enter</button>
+          </div>
+          <p class="note" style="margin-top:.6rem">Use your institution login (SSO) where required. If you don’t see your hub, <a href="#contact">contact us</a>.</p>
+        </div>
+
+        <!-- Logo grid -->
+        <div class="hub-grid" style="margin-top:14px">
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/boston.png" alt="Boston Hub logo"></div><div><div style="font-weight:700">Boston, USA</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/boston/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/buenos-aires.png" alt="Buenos Aires hub logo"></div><div><div style="font-weight:700">Buenos Aires, Argentina</div><div class="note">Latin America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/buenos-aires/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sao-paulo.png" alt="São Paulo hub logo"></div><div><div style="font-weight:700">São Paulo, Brazil</div><div class="note">Latin America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/sao-paulo/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/toronto.png" alt="Toronto hub logo"></div><div><div style="font-weight:700">Toronto, Canada</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/toronto/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/santiago.png" alt="Santiago de Chile hub logo"></div><div><div style="font-weight:700">Santiago de Chile, Chile</div><div class="note">Latin America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/santiago/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/beijing.png" alt="Beijing hub logo"></div><div><div style="font-weight:700">Beijing, China</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/beijing/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bogota.png" alt="Bogotá hub logo"></div><div><div style="font-weight:700">Bogotá, Colombia</div><div class="note">Latin America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/bogota/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/johannesburg.png" alt="Johannesburg hub logo"></div><div><div style="font-weight:700">Johannesburg, South Africa</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/johannesburg/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/jeddah.png" alt="Jeddah hub logo"></div><div><div style="font-weight:700">Jeddah, Saudi Arabia</div><div class="note">Middle East Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/jeddah/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/punjab.png" alt="Punjab hub logo"></div><div><div style="font-weight:700">Punjab, India</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/punjab/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/monterrey.png" alt="Monterrey hub logo"></div><div><div style="font-weight:700">Monterrey, Mexico</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/monterrey/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/singapore.png" alt="Singapore hub logo"></div><div><div style="font-weight:700">Singapore, Singapore</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/singapore/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/cape-town.png" alt="Cape Town hub logo"></div><div><div style="font-weight:700">Cape Town, South Africa</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/cape-town/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/istanbul.png" alt="Istanbul hub logo"></div><div><div style="font-weight:700">Istanbul, Türkiye</div><div class="note">Europe/Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/istanbul/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/london.png" alt="London hub logo"></div><div><div style="font-weight:700">London, UK</div><div class="note">Europe Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/london/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/hanoi.png" alt="Hanoi hub logo"></div><div><div style="font-weight:700">Hanoi, Vietnam</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/hanoi/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/islamabad.png" alt="Islamabad hub logo"></div><div><div style="font-weight:700">Islamabad, Pakistan</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/islamabad/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sydney.png" alt="Sydney hub logo"></div><div><div style="font-weight:700">Sydney, Australia</div><div class="note">Oceania Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/sydney/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/dhaka.png" alt="Dhaka hub logo"></div><div><div style="font-weight:700">Dhaka, Bangladesh</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/dhaka/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/accra.png" alt="Accra hub logo"></div><div><div style="font-weight:700">Accra, Ghana</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/accra/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/abuja.png" alt="Abuja hub logo"></div><div><div style="font-weight:700">Abuja, Nigeria</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/abuja/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/yaounde.png" alt="Yaoundé hub logo"></div><div><div style="font-weight:700">Yaoundé, Cameroon</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/yaounde/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/monrovia.png" alt="Monrovia hub logo"></div><div><div style="font-weight:700">Monrovia, Liberia</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/monrovia/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/kampala.png" alt="Kampala hub logo"></div><div><div style="font-weight:700">Kampala, Uganda</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/kampala/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/nairobi.png" alt="Nairobi hub logo"></div><div><div style="font-weight:700">Nairobi, Kenya</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/nairobi/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/dar-es-salaam.png" alt="Dar es Salaam hub logo"></div><div><div style="font-weight:700">Dar es Salaam, Tanzania</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/dar-es-salaam/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/kigali.png" alt="Kigali hub logo"></div><div><div style="font-weight:700">Kigali, Rwanda</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/kigali/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/addis-ababa.png" alt="Addis Ababa hub logo"></div><div><div style="font-weight:700">Addis Ababa, Ethiopia</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/addis-ababa/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/cairo.png" alt="Cairo hub logo"></div><div><div style="font-weight:700">Cairo, Egypt</div><div class="note">Africa/MENA Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/cairo/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/rabat.png" alt="Rabat hub logo"></div><div><div style="font-weight:700">Rabat, Morocco</div><div class="note">Africa/MENA Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/rabat/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/windhoek.png" alt="Windhoek hub logo"></div><div><div style="font-weight:700">Windhoek, Namibia</div><div class="note">Africa Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/windhoek/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/lima.png" alt="Lima hub logo"></div><div><div style="font-weight:700">Lima, Peru</div><div class="note">Latin America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/lima/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/manama.png" alt="Manama hub logo"></div><div><div style="font-weight:700">Manama, Bahrain</div><div class="note">Middle East Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/manama/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/jakarta.png" alt="Jakarta hub logo"></div><div><div style="font-weight:700">Jakarta, Indonesia</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/jakarta/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/tokyo.png" alt="Tokyo hub logo"></div><div><div style="font-weight:700">Tokyo, Japan</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/tokyo/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/kathmandu.png" alt="Kathmandu hub logo"></div><div><div style="font-weight:700">Kathmandu, Nepal</div><div class="note">Asia Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/kathmandu/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/abu-dhabi.png" alt="Abu Dhabi hub logo"></div><div><div style="font-weight:700">Abu Dhabi, United Arab Emirates</div><div class="note">Middle East Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/abu-dhabi/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/muscat.png" alt="Muscat hub logo"></div><div><div style="font-weight:700">Muscat, Oman</div><div class="note">Middle East Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/muscat/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/berlin.png" alt="Berlin hub logo"></div><div><div style="font-weight:700">Berlin, Germany</div><div class="note">Europe Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/berlin/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/algiers.png" alt="Algiers hub logo"></div><div><div style="font-weight:700">Algiers, Algeria</div><div class="note">Africa/MENA Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/algiers/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/rome.png" alt="Rome hub logo"></div><div><div style="font-weight:700">Rome, Italy</div><div class="note">Europe Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="/hubs/rome/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+        </div>
+
+        <p class="note" style="margin-top:12px">Replace placeholders with official logos from your <em>Collaborating/Network</em> folder. Link each “Enter hub space” to your actual login/landing (e.g., SSO, Notion, Google Sites). If a hub uses access control, ensure the URL requires authentication.</p>
+      </div>
+    </section>
 
     <!-- SPONSORS / PARTNERS (placeholders) -->
+    <section id="venue" style="background:#fff">
+      <div class="container">
+        <h2>Venue & Travel</h2>
+        <p class="lead">Boston Hub: <strong>Joseph B. Martin Conference Center</strong></p>
+        <ul class="list">
+          <li>Fully equipped, state‑of‑the‑art A/V</li>
+          <li>200+ capacity (theater style with graduated seating)</li>
+          <li>Ancillary spaces for networking and dining</li>
+          <li>On‑site food & beverage service</li>
+          <li>Security: pre‑registration not required for external guests</li>
+        </ul>
+        <p class="note" style="margin-top:.6rem"><strong>Alternate Harvard venues</strong>: Gordon Hall, Memorial Hall, Harvard Student Organization Center @ Hilles, CGIS, Center for African Studies, Countway Library, Harvard Innovation Lab, Harvard Hall (Yard).</p>
+      </div>
+    </section>
+
     <section id="partners" style="background:#f8fafc">
       <div class="container">
         <h2>Partners & Mentors</h2>
@@ -301,6 +438,23 @@
       <div class="muted">© <span id="y"></span> Health Systems Innovation Lab — Harvard T.H. Chan School of Public Health</div>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>
+  // Year
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Hub selector redirect
+  (function(){
+    var btn = document.getElementById('hubGo');
+    var sel = document.getElementById('hubSelect');
+    if(btn && sel){
+      btn.addEventListener('click', function(){
+        var url = sel.value;
+        if(url){ window.location.href = url; }
+      });
+      sel.addEventListener('keypress', function(e){
+        if(e.key === 'Enter'){ btn.click(); }
+      });
+    }
+  })();
+</script>
 </body>
 </html>
