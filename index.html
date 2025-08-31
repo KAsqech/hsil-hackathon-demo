@@ -436,16 +436,29 @@
       });
     }
   })();
-  // Fallback for missing hub logos
+  // Multi-fallback for hub logos
   (function(){
     var imgs = document.querySelectorAll('.hub-logo img');
     imgs.forEach(function(img){
       img.setAttribute('loading','lazy');
       img.setAttribute('decoding','async');
-      img.addEventListener('error', function(){
-        var p = img.closest('.hub-logo');
-        if(p){ p.classList.add('missing'); p.textContent = 'Logo pending'; }
-      }, { once: true });
+      var tried = 0;
+      var fallbacks = (img.getAttribute('data-fallbacks')||'')
+        .split(',').map(function(s){return s.trim();}).filter(Boolean);
+      var original = img.getAttribute('src');
+      img.addEventListener('error', function handler(){
+        if (tried < fallbacks.length){
+          img.removeEventListener('error', handler);
+          var nextSrc = fallbacks[tried++];
+          img.addEventListener('error', handler, { once: true });
+          img.src = nextSrc + (nextSrc.indexOf('?') === -1 ? '?v=' + Date.now() : '');
+        } else {
+          var p = img.closest('.hub-logo');
+          if(p){ p.textContent = 'Logo pending'; }
+        }
+      });
+      // Cache-bust original once to avoid stale 404s
+      img.src = original + (original.indexOf('?') === -1 ? '?v=' + Date.now() : '');
     });
   })();
 </script>
