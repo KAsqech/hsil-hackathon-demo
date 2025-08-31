@@ -436,6 +436,18 @@
       });
     }
   })();
+  // Fallback for missing hub logos
+  (function(){
+    var imgs = document.querySelectorAll('.hub-logo img');
+    imgs.forEach(function(img){
+      img.setAttribute('loading','lazy');
+      img.setAttribute('decoding','async');
+      img.addEventListener('error', function(){
+        var p = img.closest('.hub-logo');
+        if(p){ p.classList.add('missing'); p.textContent = 'Logo pending'; }
+      }, { once: true });
+    });
+  })();
 </script>
 </body>
 </html>
