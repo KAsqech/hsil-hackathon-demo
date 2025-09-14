@@ -4,39 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HSIL Annual Hackathon — Health Systems Innovation Lab</title>
-  <meta name="description" content="Build high‑value health systems with AI at the HSIL Annual Hackathon. A weekend sprint hosted by Harvard T.H. Chan School of Public Health’s Health Systems Innovation Lab." />
+  <meta name="description" content="Build high-value health systems with AI at the HSIL Annual Hackathon. A weekend sprint hosted by Harvard T.H. Chan School of Public Health’s Health Systems Innovation Lab." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b1220; /* deep navy */
-      --fg:#0f172a; /* slate-900 */
-      --muted:#64748b; /* slate-500 */
-      --ink:#0f172a;
-      --brand:#0ea5a4; /* teal-500 */
-      --brand-2:#0284c7; /* sky-600 */
-      --ring:#e2e8f0;
+      /* Harvard/HSIL-inspired palette */
+      --crimson:#A41034;        /* Harvard Crimson */
+      --crimson-dark:#7A0019;   /* deeper accent */
+      --ink:#0f172a;            /* slate-900 */
+      --muted:#64748b;          /* slate-500 */
+      --ring:#e2e8f0;           /* light gray borders */
       --card:#ffffff;
-      --cta:#059669; /* emerald-600 */
+      --cta:var(--crimson);
       --cta-ink:#ffffff;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--ink);}
-    a{color:var(--brand-2);text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--crimson);text-decoration:none}
+    a:hover{text-decoration:underline;color:var(--crimson-dark)}
     .container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+
     header.site{position:sticky;top:0;background:#fff7;backdrop-filter:blur(8px);border-bottom:1px solid var(--ring);z-index:50}
     nav{display:flex;align-items:center;justify-content:space-between;height:68px}
     .brand{display:flex;gap:.6rem;align-items:center;font-weight:700}
-    .brand-badge{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff}
+    .brand-logo{height:36px;width:auto;display:block}
+    .brand-text{white-space:nowrap}
+
     .links{display:none;gap:1rem}
     @media (min-width: 860px){.links{display:flex}}
+
     .btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--ring);background:#fff;border-radius:12px;height:42px;padding:0 .9rem;font-weight:600}
     .btn.primary{background:var(--cta);border-color:var(--cta);color:var(--cta-ink)}
+    .btn.primary:hover{background:var(--crimson-dark);border-color:var(--crimson-dark)}
     .btn.block{width:100%;justify-content:center}
-    /* Hero */
-    .hero{background:radial-gradient(1200px 600px at 10% -10%, #e0f2fe, transparent),radial-gradient(1000px 500px at 90% -20%, #ccfbf1, transparent),#fff}
+
+    /* Hero with subtle crimson tint */
+    .hero{
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #fde8ec, transparent),
+        radial-gradient(1000px 500px at 90% -20%, #f9e3ea, transparent),
+        #fff;
+    }
     .hero-grid{display:grid;gap:2rem;grid-template-columns:1fr}
     @media (min-width: 980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
     h1{font-size:clamp(2rem,3.6vw,3.75rem);line-height:1.05;margin:0}
@@ -45,6 +55,7 @@
     @media (min-width: 740px){.kpis{grid-template-columns:repeat(4,1fr)}}
     .kpi{background:#fff;border:1px solid var(--ring);border-radius:16px;padding:1rem;text-align:center}
     .kpi .big{font-size:1.8rem;font-weight:800}
+
     /* Sections */
     section{padding:72px 0}
     h2{font-size:clamp(1.5rem,2.4vw,2.25rem);margin:0 0 10px 0}
@@ -54,8 +65,10 @@
     @media (min-width: 900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:1.25rem}
     .list{list-style:disc;padding-left:1.1rem;color:var(--muted)}
+
     .timeline{display:grid;gap:1rem}
     @media (min-width: 900px){.timeline{grid-template-columns:repeat(4,1fr)}}
+
     .pill{display:inline-block;border-radius:9999px;border:1px solid var(--ring);padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
     .foot{border-top:1px solid var(--ring);padding:36px 0;color:var(--muted)}
     .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -63,7 +76,8 @@
     .logo{height:56px;border:1px dashed var(--ring);border-radius:14px;display:grid;place-items:center;color:var(--muted)}
     .minititle{font-size:.85rem;font-weight:700;color:#0b172a;text-transform:uppercase;letter-spacing:.06em}
     .note{font-size:.9rem;color:var(--muted)}
-      /* Hubs */
+
+    /* Hubs */
     .hub-grid{display:grid;grid-template-columns:1fr;gap:14px}
     @media (min-width: 680px){.hub-grid{grid-template-columns:repeat(2,1fr)}}
     @media (min-width: 980px){.hub-grid{grid-template-columns:repeat(3,1fr)}}
@@ -72,27 +86,34 @@
     .hub-logo img{width:100%;height:100%;object-fit:contain}
     .hub-actions{display:flex;gap:.5rem;flex-wrap:wrap}
     .select{height:48px;border:1px solid var(--ring);border-radius:12px;padding:0 .9rem;font-size:1rem;background:#fff}
+
+    /* Pyramid layout for Previous Hackathons */
+    .pyramid{display:grid;gap:1rem}
+    .pyramid .row{display:grid;gap:1rem}
+    .pyramid .row.top{grid-template-columns:repeat(2,1fr)}
+    .pyramid .row.bottom{grid-template-columns:repeat(1,1fr)}
+    @media (min-width: 760px){.pyramid .row.bottom{grid-template-columns:repeat(3,1fr)}}
   </style>
 </head>
 <body>
   <header class="site">
     <div class="container">
       <nav>
-        <div class="brand">
-          <div class="brand-badge">H</div>
-          <span>HSIL Hackathon</span>
-        </div>
+        <!-- Clickable HSIL logo to main HSIL home -->
+        <a class="brand" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/" target="_blank" rel="noopener">
+          <img class="brand-logo" src="assets/hsil-logo.png" alt="HSIL — Health Systems Innovation Lab">
+          <span class="brand-text">HSIL Hackathon</span>
+        </a>
         <div class="links">
-          <a href="#about">About</a>
-          <a href="#how">How it works</a>
+          <!-- Removed About (Focus Areas), How it works, and Hubs from nav -->
           <a href="#timeline">Timeline</a>
           <a href="#previous">Previous Years</a>
           <a href="#incubation">Incubation</a>
-          <a href="#hubs">Hubs</a>
-          <a href="#faq">FAQ</a>
+          <a href="#apply">Apply</a>
+          <!-- Keep FAQ if you plan to add later; otherwise remove -->
+          <!-- <a href="#faq">FAQ</a> -->
         </div>
         <div>
-          <a class="btn" href="#primer">Download Primer</a>
           <a class="btn primary" href="#apply">Apply Now</a>
         </div>
       </nav>
@@ -104,23 +125,21 @@
     <section class="hero">
       <div class="container hero-grid" style="padding-top:64px;padding-bottom:32px">
         <div>
-          <h1>Building High‑Value Health Systems: Harnessing AI for Global Impact</h1>
-          <p class="lead" style="margin-top:12px">Where the world’s best minds reengineer the future of care. Join the 7th Edition to design, prototype, and pitch technology‑powered health system solutions with real pathways to scale.</p>
+          <h1>Building High-Value Health Systems: Harnessing AI for Global Impact</h1>
+          <p class="lead" style="margin-top:12px">Where the world’s best minds reengineer the future of care. Join the 7th Edition to design, prototype, and pitch technology-powered health system solutions with real pathways to scale.</p>
           <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:14px">
             <span class="pill">Boston Hub + 40+ global hubs</span>
-            <span class="pill">Interdisciplinary • Impact‑driven</span>
+            <span class="pill">Interdisciplinary • Impact-driven</span>
             <span class="pill">Innovation Pipeline → Incubation → Demo Day</span>
           </div>
           <div style="display:flex;gap:.8rem;margin-top:18px;flex-wrap:wrap">
             <a class="btn primary" href="#apply">Apply Now</a>
-            <a class="btn" href="#primer">Challenge Primer</a>
           </div>
           <div class="kpis">
             <div class="kpi"><div class="big">6000+</div><div class="muted">Hackers to date</div></div>
             <div class="kpi"><div class="big">250+</div><div class="muted">Teams formed</div></div>
             <div class="kpi"><div class="big">50+</div><div class="muted">Countries</div></div>
             <div class="kpi"><div class="big">40+</div><div class="muted">Institutions</div></div>
-          </div><div class="muted">Teams (2025)</div></div>
             <div class="kpi"><div class="big">19</div><div class="muted">Global Hubs (2025)</div></div>
             <div class="kpi"><div class="big">3</div><div class="muted">Days</div></div>
             <div class="kpi"><div class="big">∞</div><div class="muted">Impact Pathways</div></div>
@@ -129,7 +148,7 @@
         <div>
           <div class="card">
             <div class="minititle">What is the HSIL Annual Hackathon?</div>
-            <p class="muted" style="margin:.4rem 0 0 0">A catalyst for practical innovation that empowers participants to propose and build solutions improving healthcare delivery and system performance. The event nurtures unconventional thinking and bridges the gap between theory and practice—so solutions can translate into real‑world change.</p>
+            <p class="muted" style="margin:.4rem 0 0 0">A catalyst for practical innovation that empowers participants to propose and build solutions improving healthcare delivery and system performance. The event nurtures unconventional thinking and bridges the gap between theory and practice—so solutions can translate into real-world change.</p>
           </div>
           <div class="card" style="margin-top:12px">
             <div class="minititle">Who joins?</div>
@@ -139,74 +158,11 @@
       </div>
     </section>
 
-    <!-- ABOUT / THEMES (editable) -->
-    <section id="about">
-      <div class="container">
-        <h2>Focus Areas</h2>
-        <p class="lead">Each year’s theme centers on building high‑value health systems, with emphasis on digital health and responsible AI. Detailed challenge statements are shared in the Primer and at kickoff.</p>
-        <div class="grid cols-3" style="margin-top:12px">
-          <div class="card">
-            <h3 style="margin-top:0">System Resilience</h3>
-            <ul class="list">
-              <li>Governance & financing visibility</li>
-              <li>Resource allocation & surge capacity</li>
-              <li>Preparedness dashboards</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Equity & Public Health</h3>
-            <ul class="list">
-              <li>Access & outcome gap‑closing tools</li>
-              <li>Community signal & trust platforms</li>
-              <li>Bias monitoring & evaluation</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Data → Outcomes</h3>
-            <ul class="list">
-              <li>Primary care capture & visualization</li>
-              <li>Care‑gap closure & referral loops</li>
-              <li>Outcome tracking & feedback</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Removed Focus Areas / About section -->
 
-    <!-- HOW IT WORKS -->
-    <section id="how" style="background:#f8fafc">
-      <div class="container">
-        <h2>How it works</h2>
-        <div class="grid cols-3" style="margin-top:12px">
-          <div class="card">
-            <h3 style="margin-top:0">Day 1 — Kickoff</h3>
-            <ul class="list">
-              <li>Keynote & challenge deep‑dives</li>
-              <li>Team formation & problem framing</li>
-              <li>Mentor office hours</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Day 2 — Build</h3>
-            <ul class="list">
-              <li>Workshops: clinical, product, policy</li>
-              <li>Data labs & testing</li>
-              <li>Midpoint reviews</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Day 3 — Demo Day</h3>
-            <ul class="list">
-              <li>Pitch polishing</li>
-              <li>Judging & showcases</li>
-              <li>Awards & next steps</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Removed How it works section -->
 
-    <!-- TIMELINE (editable) -->
+    <!-- TIMELINE -->
     <section id="timeline">
       <div class="container">
         <h2>Timeline — 2026 (7th Edition)</h2>
@@ -221,38 +177,46 @@
       </div>
     </section>
 
-    <!-- PREVIOUS YEARS (grounded) -->
+    <!-- PREVIOUS YEARS — pyramid layout -->
     <section id="previous" style="background:#f8fafc">
       <div class="container">
         <h2>Previous Hackathons</h2>
-        <div class="grid cols-3" style="margin-top:12px">
-          <div class="card">
-            <h3 style="margin-top:0">2025</h3>
-            <p class="muted">“Building High‑Value Health Systems: Leveraging Artificial Intelligence”</p>
+
+        <div class="pyramid" style="margin-top:12px">
+          <!-- Top row (2) -->
+          <div class="row top">
+            <div class="card">
+              <h3 style="margin-top:0">2025</h3>
+              <p class="muted">“Building High-Value Health Systems: Leveraging Artificial Intelligence”</p>
+            </div>
+            <div class="card">
+              <h3 style="margin-top:0">2024</h3>
+              <p class="muted">“Building High-Value Health Systems: Harnessing Digital Health and Artificial Intelligence”</p>
+            </div>
           </div>
-          <div class="card">
-            <h3 style="margin-top:0">2024</h3>
-            <p class="muted">“Building High‑Value Health Systems: Harnessing Digital Health and Artificial Intelligence”</p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">2023</h3>
-            <p class="muted">“Hackathon Latin America: Digital Solutions for building High‑Value Health Systems”</p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">2022</h3>
-            <p class="muted">“Hackathon Africa: Digital Solutions to Transform Diabetes Health Care in Africa”</p>
-            <p class="muted">“Africa Health Conference: Building Resilience and the Future of Health in Africa”</p>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">2021</h3>
-            <p class="muted">“Hackathon Asia: Type 1 Diabetes – Global Collaborative for Changing Diabetes in Children”</p>
+          <!-- Bottom row (3) -->
+          <div class="row bottom">
+            <div class="card">
+              <h3 style="margin-top:0">2023</h3>
+              <p class="muted">“Hackathon Latin America: Digital Solutions for building High-Value Health Systems”</p>
+            </div>
+            <div class="card">
+              <h3 style="margin-top:0">2022</h3>
+              <p class="muted">“Hackathon Africa: Digital Solutions to Transform Diabetes Health Care in Africa”</p>
+              <p class="muted">“Africa Health Conference: Building Resilience and the Future of Health in Africa”</p>
+            </div>
+            <div class="card">
+              <h3 style="margin-top:0">2021</h3>
+              <p class="muted">“Hackathon Asia: Type 1 Diabetes – Global Collaborative for Changing Diabetes in Children”</p>
+            </div>
           </div>
         </div>
+
         <p class="note" style="margin-top:10px">In 2025, the HSIL Hackathon featured 100+ teams across 19 hubs worldwide.</p>
       </div>
     </section>
 
-    <!-- INCUBATION (grounded) -->
+    <!-- INCUBATION -->
     <section id="incubation">
       <div class="container">
         <h2>Venture Incubation Program</h2>
@@ -260,12 +224,13 @@
         <div class="grid cols-3" style="margin-top:12px">
           <div class="card"><strong>Focus</strong><br><span class="muted">Problem/solution fit, GTM, MVP, and funding strategy</span></div>
           <div class="card"><strong>Format</strong><br><span class="muted">Virtual cohorts with international mentors and partners</span></div>
-          <div class="card"><strong>Goal</strong><br><span class="muted">Accelerate health‑system improvements and measurable outcomes</span></div>
+          <div class="card"><strong>Goal</strong><br><span class="muted">Accelerate health-system improvements and measurable outcomes</span></div>
         </div>
-        <p class="note" style="margin-top:10px">Details announced post‑hackathon with selected teams.</p>
+        <p class="note" style="margin-top:10px">Details announced post-hackathon with selected teams.</p>
       </div>
     </section>
-    <!-- COLLABORATING HUBS -->
+
+    <!-- COLLABORATING HUBS (kept; Boston Hub is listed here) -->
     <section id="hubs" style="background:#f8fafc">
       <div class="container">
         <h2>Collaborating Hubs</h2>
@@ -299,48 +264,48 @@
             </select>
             <button id="hubGo" class="btn primary" type="button">Enter</button>
           </div>
-          <p class="note" style="margin-top:.6rem">Use your institution login (SSO) where required. If you don’t see your hub, <a href="#contact">contact us</a>.</p>
+          <p class="note" style="margin-top:.6rem">Use your institution login (SSO) where required.</p>
         </div>
 
-        <!-- Logo grid (replace src paths with actual files from Collaborating/Network) -->
+        <!-- Logo grid -->
         <div class="hub-grid" style="margin-top:14px">
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/boston-hsil.png" alt="HSIL Boston logo"></div><div><div style="font-weight:700">Boston, USA — HSIL</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/boston/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/boston-hsil.png" alt="HSIL Boston logo"></div><div><div style="font-weight:700">Boston, USA — HSIL</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/boston/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/argentina-swiss-los-andes.png" alt="Swiss Medical Group / Universidad de los Andes logo"></div><div><div style="font-weight:700">Argentina</div><div class="note">Swiss Medical Group / Universidad de los Andes</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/argentina/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/argentina-swiss-los-andes.png" alt="Swiss Medical Group / Universidad de los Andes logo"></div><div><div style="font-weight:700">Argentina</div><div class="note">Swiss Medical Group / Universidad de los Andes</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/argentina/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sydney-unsw.png" alt="UNSW logo"></div><div><div style="font-weight:700">Australia — Sydney</div><div class="note">UNSW</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sydney/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sydney-unsw.png" alt="UNSW logo"></div><div><div style="font-weight:700">Australia — Sydney</div><div class="note">UNSW</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sydney/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bangladesh-uiu.png" alt="United International University logo"></div><div><div style="font-weight:700">Bangladesh</div><div class="note">United International University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bangladesh/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bangladesh-uiu.png" alt="United International University logo"></div><div><div style="font-weight:700">Bangladesh</div><div class="note">United International University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bangladesh/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sao-paulo-fgv-innova-hc.png" alt="FGV / Innova HC logo"></div><div><div style="font-weight:700">Brazil — São Paulo</div><div class="note">Fundação Getulio Vargas (FGV) — Innova HC</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sao-paulo/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sao-paulo-fgv-innova-hc.png" alt="FGV / Innova HC logo"></div><div><div style="font-weight:700">Brazil — São Paulo</div><div class="note">Fundação Getulio Vargas (FGV) — Innova HC</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sao-paulo/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/toronto-uoft-dlsph.png" alt="University of Toronto / Dalla Lana SPH logo"></div><div><div style="font-weight:700">Canada — Toronto</div><div class="note">University of Toronto / Dalla Lana SPH</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/toronto/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/toronto-uoft-dlsph.png" alt="University of Toronto / Dalla Lana SPH logo"></div><div><div style="font-weight:700">Canada — Toronto</div><div class="note">University of Toronto / Dalla Lana SPH</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/toronto/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/santiago-puc-unab-ncrc.png" alt="Catholic University of Chile / NCRC / UNAB logos"></div><div><div style="font-weight:700">Chile — Santiago</div><div class="note">Catholic University of Chile / National Cancer Research Center / Universidad Andrés Bello</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/santiago/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/santiago-puc-unab-ncrc.png" alt="Catholic University of Chile / NCRC / UNAB logos"></div><div><div style="font-weight:700">Chile — Santiago</div><div class="note">Catholic University of Chile / National Cancer Research Center / Universidad Andrés Bello</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/santiago/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/beijing-tsinghua.png" alt="Tsinghua University logo"></div><div><div style="font-weight:700">China — Beijing</div><div class="note">Tsinghua University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/beijing/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/beijing-tsinghua.png" alt="Tsinghua University logo"></div><div><div style="font-weight:700">China — Beijing</div><div class="note">Tsinghua University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/beijing/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bogota-rosario.png" alt="Universidad del Rosario logo"></div><div><div style="font-weight:700">Colombia — Bogotá</div><div class="note">Universidad del Rosario</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bogota/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bogota-rosario.png" alt="Universidad del Rosario logo"></div><div><div style="font-weight:700">Colombia — Bogotá</div><div class="note">Universidad del Rosario</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bogota/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/punjab-iit-ropar.png" alt="IIT Ropar logo"></div><div><div style="font-weight:700">India — Punjab</div><div class="note">IIT Ropar</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/punjab/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/punjab-iit-ropar.png" alt="IIT Ropar logo"></div><div><div style="font-weight:700">India — Punjab</div><div class="note">IIT Ropar</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/punjab/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/monterrey-unam.png" alt="UNAM logo"></div><div><div style="font-weight:700">Mexico — Monterrey</div><div class="note">National Autonomous University of Mexico (UNAM)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/monterrey/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/monterrey-unam.png" alt="UNAM logo"></div><div><div style="font-weight:700">Mexico — Monterrey</div><div class="note">National Autonomous University of Mexico (UNAM)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/monterrey/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/pakistan-nust-shs.png" alt="NUST School of Health Sciences logo"></div><div><div style="font-weight:700">Pakistan</div><div class="note">NUST School of Health Sciences</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/pakistan/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/pakistan-nust-shs.png" alt="NUST School of Health Sciences logo"></div><div><div style="font-weight:700">Pakistan</div><div class="note">NUST School of Health Sciences</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/pakistan/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/saudi-mbsc-habib.png" alt="MBSC / Dr. Sulaiman Al Habib Medical Academy logos"></div><div><div style="font-weight:700">Saudi Arabia</div><div class="note">MBSC / Dr. Sulaiman Al Habib Medical Academy</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/saudi-arabia/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/saudi-mbsc-habib.png" alt="MBSC / Dr. Sulaiman Al Habib Medical Academy logos"></div><div><div style="font-weight:700">Saudi Arabia</div><div class="note">MBSC / Dr. Sulaiman Al Habib Medical Academy</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/saudi-arabia/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/singapore-ntu.png" alt="NTU logo"></div><div><div style="font-weight:700">Singapore</div><div class="note">Nanyang Technological University (NTU)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/singapore/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/singapore-ntu.png" alt="NTU logo"></div><div><div style="font-weight:700">Singapore</div><div class="note">Nanyang Technological University (NTU)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/singapore/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/cape-town-uct.png" alt="University of Cape Town logo"></div><div><div style="font-weight:700">South Africa — Cape Town</div><div class="note">University of Cape Town</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/cape-town/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/cape-town-uct.png" alt="University of Cape Town logo"></div><div><div style="font-weight:700">South Africa — Cape Town</div><div class="note">University of Cape Town</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/cape-town/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/johannesburg-wits.png" alt="University of the Witwatersrand logo"></div><div><div style="font-weight:700">South Africa — Johannesburg</div><div class="note">University of the Witwatersrand</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/johannesburg/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/johannesburg-wits.png" alt="University of the Witwatersrand logo"></div><div><div style="font-weight:700">South Africa — Johannesburg</div><div class="note">University of the Witwatersrand</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/johannesburg/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/istanbul-koc.png" alt="Koç University logo"></div><div><div style="font-weight:700">Türkiye — Istanbul</div><div class="note">Koç University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/istanbul/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/istanbul-koc.png" alt="Koç University logo"></div><div><div style="font-weight:700">Türkiye — Istanbul</div><div class="note">Koç University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/istanbul/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/london-kcl.png" alt="King's College London logo"></div><div><div style="font-weight:700">UK — London</div><div class="note">King's College London</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/london/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/london-kcl.png" alt="King's College London logo"></div><div><div style="font-weight:700">UK — London</div><div class="note">King's College London</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/london/">Enter hub space</a></div></div></div>
 
-          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/hanoi-hmu.png" alt="Hanoi Medical University logo"></div><div><div style="font-weight:700">Vietnam — Hanoi</div><div class="note">Hanoi Medical University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/hanoi/">Enter hub space</a><a class="btn" href="#">View brief</a></div></div></div>
+          <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/hanoi-hmu.png" alt="Hanoi Medical University logo"></div><div><div style="font-weight:700">Vietnam — Hanoi</div><div class="note">Hanoi Medical University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/hanoi/">Enter hub space</a></div></div></div>
         </div>
 
         <!-- Network partners / collaborators -->
@@ -349,26 +314,11 @@
           <div class="logos" style="margin-top:12px">
             <img class="logo" src="assets/hubs/partner-path.png" alt="PATH logo" style="object-fit:contain">
           </div>
-          <p class="note" style="margin-top:.6rem">Add additional collaborators from your <em>Collaborating/Network</em> folder here.</p>
         </div>
       </div>
     </section>
 
-    <!-- SPONSORS / PARTNERS (placeholders) -->
-    <section id="venue" style="background:#fff">
-      <div class="container">
-        <h2>Venue & Travel</h2>
-        <p class="lead">Boston Hub: <strong>Joseph B. Martin Conference Center</strong></p>
-        <ul class="list">
-          <li>Fully equipped, state‑of‑the‑art A/V</li>
-          <li>200+ capacity (theater style with graduated seating)</li>
-          <li>Ancillary spaces for networking and dining</li>
-          <li>On‑site food & beverage service</li>
-          <li>Security: pre‑registration not required for external guests</li>
-        </ul>
-        <p class="note" style="margin-top:.6rem"><strong>Alternate Harvard venues</strong>: Gordon Hall, Memorial Hall, Harvard Student Organization Center @ Hilles, CGIS, Center for African Studies, Countway Library, Harvard Innovation Lab, Harvard Hall (Yard).</p>
-      </div>
-    </section>
+    <!-- Removed Venue & Travel (Boston now lives with the Hubs section) -->
 
     <section id="partners" style="background:#f8fafc">
       <div class="container">
@@ -412,16 +362,18 @@
 
   <footer class="foot">
     <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
-      <div class="brand">
-        <div class="brand-badge">H</div>
-        <span>HSIL Hackathon</span>
-      </div>
+      <a class="brand" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/" target="_blank" rel="noopener">
+        <img class="brand-logo" src="assets/hsil-logo.png" alt="HSIL — Health Systems Innovation Lab">
+        <span class="brand-text">HSIL Hackathon</span>
+      </a>
       <div class="muted">© <span id="y"></span> Health Systems Innovation Lab — Harvard T.H. Chan School of Public Health</div>
     </div>
   </footer>
+
   <script>
   // Year
   document.getElementById('y').textContent = new Date().getFullYear();
+
   // Hub selector redirect
   (function(){
     var btn = document.getElementById('hubGo');
@@ -436,6 +388,7 @@
       });
     }
   })();
+
   // Multi-fallback for hub logos
   (function(){
     var imgs = document.querySelectorAll('.hub-logo img');
@@ -461,6 +414,6 @@
       img.src = original + (original.indexOf('?') === -1 ? '?v=' + Date.now() : '');
     });
   })();
-</script>
+  </script>
 </body>
 </html>
