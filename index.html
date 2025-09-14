@@ -29,6 +29,7 @@
     header.site{position:sticky;top:0;background:#fff7;backdrop-filter:blur(8px);border-bottom:1px solid var(--ring);z-index:50}
     nav{display:flex;align-items:center;justify-content:space-between;height:68px}
     .brand{display:flex;gap:.6rem;align-items:center;font-weight:700}
+    .brand-link{display:inline-flex;align-items:center}
     .brand-logo{height:36px;width:auto;display:block}
     .brand-text{white-space:nowrap}
 
@@ -99,20 +100,24 @@
   <header class="site">
     <div class="container">
       <nav>
-        <!-- Clickable HSIL logo to main HSIL home -->
-        <a class="brand" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/" target="_blank" rel="noopener">
-          <img class="brand-logo" src="assets/hsil-logo.png" alt="HSIL — Health Systems Innovation Lab">
+        <!-- Only the logo is clickable; links to the launch site's homepage -->
+        <div class="brand">
+          <a class="brand-link" href="./" aria-label="Go to HSIL Hackathon home">
+            <img class="brand-logo"
+                 src="assets/hsil-logo.png?v=20250914"
+                 alt="HSIL — Health Systems Innovation Lab" width="160" height="36">
+          </a>
           <span class="brand-text">HSIL Hackathon</span>
-        </a>
+        </div>        
+
         <div class="links">
-          <!-- Removed About (Focus Areas), How it works, and Hubs from nav -->
           <a href="#timeline">Timeline</a>
           <a href="#previous">Previous Years</a>
           <a href="#incubation">Incubation</a>
           <a href="#apply">Apply</a>
-          <!-- Keep FAQ if you plan to add later; otherwise remove -->
           <!-- <a href="#faq">FAQ</a> -->
         </div>
+
         <div>
           <a class="btn primary" href="#apply">Apply Now</a>
         </div>
@@ -250,7 +255,7 @@
               <option value="hubs/toronto/">Canada, Toronto — University of Toronto / Dalla Lana SPH</option>
               <option value="hubs/santiago/">Chile, Santiago — Catholic University of Chile / NCRC / UNAB</option>
               <option value="hubs/beijing/">China, Beijing — Tsinghua University</option>
-              <option value="hubs/bogota/">Colombia, Bogotá — Universidad del Rosario</option>
+              <option value="hubs/bogota/">Colombia — Bogotá — Universidad del Rosario</option>
               <option value="hubs/punjab/">India, Punjab — IIT Ropar</option>
               <option value="hubs/monterrey/">Mexico, Monterrey — UNAM</option>
               <option value="hubs/pakistan/">Pakistan — NUST School of Health Sciences</option>
@@ -259,7 +264,7 @@
               <option value="hubs/cape-town/">South Africa — Cape Town, University of Cape Town</option>
               <option value="hubs/johannesburg/">South Africa — Johannesburg, University of the Witwatersrand</option>
               <option value="hubs/istanbul/">Türkiye, Istanbul — Koç University</option>
-              <option value="hubs/london/">UK, London — King's College London</option>
+              <option value="hubs/london/">UK — London — King's College London</option>
               <option value="hubs/hanoi/">Vietnam — Hanoi Medical University</option>
             </select>
             <button id="hubGo" class="btn primary" type="button">Enter</button>
@@ -362,10 +367,13 @@
 
   <footer class="foot">
     <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
-      <a class="brand" href="https://hsph.harvard.edu/research/health-systems-innovation-lab/" target="_blank" rel="noopener">
-        <img class="brand-logo" src="assets/hsil-logo.png" alt="HSIL — Health Systems Innovation Lab">
+      <div class="brand">
+        <a class="brand-link" href="./" aria-label="Go to HSIL Hackathon home">
+          <img class="brand-logo" src="assets/hsil-logo.png?v=20250914"
+               alt="HSIL — Health Systems Innovation Lab">
+        </a>
         <span class="brand-text">HSIL Hackathon</span>
-      </a>
+      </div>      
       <div class="muted">© <span id="y"></span> Health Systems Innovation Lab — Harvard T.H. Chan School of Public Health</div>
     </div>
   </footer>
