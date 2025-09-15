@@ -67,9 +67,6 @@
     .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:1.25rem}
     .list{list-style:disc;padding-left:1.1rem;color:var(--muted)}
 
-    .timeline{display:grid;gap:1rem}
-    @media (min-width: 900px){.timeline{grid-template-columns:repeat(4,1fr)}}
-
     .pill{display:inline-block;border-radius:9999px;border:1px solid var(--ring);padding:.35rem .7rem;color:var(--muted);font-size:.9rem}
     .foot{border-top:1px solid var(--ring);padding:36px 0;color:var(--muted)}
     .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -94,28 +91,65 @@
     .pyramid .row.top{grid-template-columns:repeat(2,1fr)}
     .pyramid .row.bottom{grid-template-columns:repeat(1,1fr)}
     @media (min-width: 760px){.pyramid .row.bottom{grid-template-columns:repeat(3,1fr)}}
+
+    /* ===== Innovation Pipeline 2026 (timeline) ===== */
+    :root{
+      --pipe-border:#1f2937;     /* slate-800 for outlines */
+      --pipe-line:#334155;       /* slate-700 for connectors */
+      --pipe-yellow:#f6b73c;     /* judging bars */
+      --pipe-green:#d9f7d9;      /* venture teams */
+      --blue-stage:#b8d0f7;      /* Bootcamps */
+      --purple-stage:#d7c2ea;    /* Venture Immersion */
+      --mint-stage:#bfe7e5;      /* Demo Day */
+    }
+    .pipeline{position:relative;overflow-x:auto;padding-bottom:8px}
+    .pipeline .stages{
+      display:grid;
+      grid-template-columns: repeat(5, 260px);
+      gap:28px; align-items:start;
+      min-width:max-content;
+      padding:6px 4px 0 4px;
+    }
+    @media (max-width: 900px){
+      .pipeline .stages{ grid-template-columns: repeat(5, 220px); gap:22px; }
+    }
+    .stage{position:relative;transition:transform .5s ease,opacity .5s ease;opacity:0;transform:translateY(16px)}
+    .stage.in-view{opacity:1;transform:translateY(0)}
+    .stage .duration{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:.35rem}
+    .stage .duration .roman{font-weight:800;color:var(--crimson);margin-right:.25rem}
+    .box{border:2px solid var(--pipe-border);border-radius:8px;background:#fff;padding:.9rem .8rem;text-align:center;font-weight:700}
+    .box.boot{background:var(--blue-stage)}
+    .box.boot2{background:var(--blue-stage)}
+    .box.immersion{background:var(--purple-stage)}
+    .box.demo{background:var(--mint-stage)}
+    .sub{margin:.5rem auto 0;background:var(--pipe-yellow);color:#111827;font-weight:700;font-size:.95rem;border-radius:6px;padding:.35rem .5rem;display:inline-block;border:1.5px solid #925c00}
+    .count{margin:.5rem auto 0;background:var(--pipe-green);color:#064e3b;border:1.5px solid #15803d22;font-weight:700;font-size:.95rem;border-radius:6px;padding:.35rem .55rem;display:inline-block}
+    .date{text-align:center;color:#334155;font-size:.9rem;margin-top:.5rem}
+    .arrow{position:absolute;right:-26px;top:58px;width:26px;height:10px;display:block}
+    .arrow svg{width:100%;height:100%;overflow:visible}
+    .arrow path{stroke:var(--pipe-line);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:30 30;stroke-dashoffset:30;transition:stroke-dashoffset .8s ease .2s}
+    .stage.in-view .arrow path{stroke-dashoffset:0}
+    .stage:last-child .arrow{display:none}
+    @media (max-width:700px){.arrow{display:none}}
   </style>
 </head>
 <body>
   <header class="site">
     <div class="container">
       <nav>
-        <!-- Only the logo is clickable; links to the launch site's homepage -->
+        <!-- Only the logo is clickable; links to the site home -->
         <div class="brand">
           <a class="brand-link" href="./" aria-label="Go to HSIL Hackathon home">
-            <img class="brand-logo"
-                 src="assets/hsil-logo.png?v=20250914"
-                 alt="HSIL — Health Systems Innovation Lab" width="160" height="36">
+            <img class="brand-logo" src="assets/hsil-logo.png?v=20250914" alt="HSIL — Health Systems Innovation Lab" width="160" height="36">
           </a>
           <span class="brand-text">HSIL Hackathon</span>
-        </div>        
+        </div>
 
         <div class="links">
           <a href="#timeline">Timeline</a>
           <a href="#previous">Previous Years</a>
           <a href="#incubation">Incubation</a>
           <a href="#apply">Apply</a>
-          <!-- <a href="#faq">FAQ</a> -->
         </div>
 
         <div>
@@ -163,21 +197,73 @@
       </div>
     </section>
 
-    <!-- Removed Focus Areas / About section -->
-
-    <!-- Removed How it works section -->
-
-    <!-- TIMELINE -->
+    <!-- TIMELINE: Innovation Pipeline 2026 -->
     <section id="timeline">
       <div class="container">
-        <h2>Timeline — 2026 (7th Edition)</h2>
-        <p class="note">Dates reflect the 2026 Innovation Pipeline schedule. Local hubs may run supplementary sessions.</p>
-        <div class="timeline" style="margin-top:12px">
-          <div class="card"><div class="muted">Hackathon Weekend</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">April 10–11, 2026</div><div class="note" style="margin-top:.25rem">2 days • Team formation, build sprint, hub judging</div></div>
-          <div class="card"><div class="muted">Venture Building Bootcamp 1</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">April 20 – May 1, 2026</div><div class="note" style="margin-top:.25rem">Hub winners → 50 venture teams</div></div>
-          <div class="card"><div class="muted">HSIL Judging + Bootcamp 2</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">May 4 – May 15, 2026</div><div class="note" style="margin-top:.25rem">20 venture teams → 10 finalists</div></div>
-          <div class="card"><div class="muted">Global Judging Window</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">May 18 – June 12, 2026</div><div class="note" style="margin-top:.25rem">Finalist refinement + global panel</div></div>
-          <div class="card"><div class="muted">Demo Day</div><div style="font-weight:700;font-size:1.15rem;margin-top:.25rem">June 19, 2026</div><div class="note" style="margin-top:.25rem">Pitches to investors • Awards</div></div>
+        <h2>Innovation Pipeline — 2026 (7th Edition)</h2>
+        <p class="note">A transitional flow from Hackathon → Bootcamps → Immersion → Demo Day, mirroring the 2026 pipeline.</p>
+
+        <div class="pipeline" aria-label="Innovation Pipeline 2026">
+          <div class="stages">
+
+            <!-- Stage 1 -->
+            <div class="stage">
+              <div class="duration"><span class="roman">I</span>2 Days</div>
+              <div class="box">Hackathon</div>
+              <div class="sub">Hub Judging</div>
+              <div class="count">50 venture teams</div>
+              <div class="date">10–11 April</div>
+              <div class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="stage">
+              <div class="duration"><span class="roman">II</span>4 Weeks</div>
+              <div class="box boot">Bootcamp 1</div>
+              <div class="sub">HSIL Judging</div>
+              <div class="count">20 venture teams</div>
+              <div class="date">20 Apr – 1 May</div>
+              <div class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="stage">
+              <div class="duration"><span class="roman">III</span>4 Weeks</div>
+              <div class="box boot2">Bootcamp 2</div>
+              <div class="sub">Global Judging</div>
+              <div class="count">10 venture teams</div>
+              <div class="date">4–15 May</div>
+              <div class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="stage">
+              <div class="duration"><span class="roman">III</span>4 Weeks</div>
+              <div class="box immersion">Venture Building Immersion</div>
+              <div class="sub">Global Judging</div>
+              <div class="count">5 venture teams</div>
+              <div class="date">18 May – 12 June</div>
+              <div class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="stage">
+              <div class="duration"><span class="roman">IV</span>1 Day</div>
+              <div class="box demo">Demo Day</div>
+              <div class="sub">Pitches to Investors</div>
+              <div class="count">—</div>
+              <div class="date">19 June</div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -235,7 +321,7 @@
       </div>
     </section>
 
-    <!-- COLLABORATING HUBS (kept; Boston Hub is listed here) -->
+    <!-- COLLABORATING HUBS -->
     <section id="hubs" style="background:#f8fafc">
       <div class="container">
         <h2>Collaborating Hubs</h2>
@@ -323,8 +409,7 @@
       </div>
     </section>
 
-    <!-- Removed Venue & Travel (Boston now lives with the Hubs section) -->
-
+    <!-- PARTNERS / MENTORS -->
     <section id="partners" style="background:#f8fafc">
       <div class="container">
         <h2>Partners & Mentors</h2>
@@ -369,11 +454,10 @@
     <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
       <div class="brand">
         <a class="brand-link" href="./" aria-label="Go to HSIL Hackathon home">
-          <img class="brand-logo" src="assets/hsil-logo.png"
-               alt="HSIL — Health Systems Innovation Lab">
+          <img class="brand-logo" src="assets/hsil-logo.png?v=20250914" alt="HSIL — Health Systems Innovation Lab">
         </a>
         <span class="brand-text">HSIL Hackathon</span>
-      </div>      
+      </div>
       <div class="muted">© <span id="y"></span> Health Systems Innovation Lab — Harvard T.H. Chan School of Public Health</div>
     </div>
   </footer>
@@ -420,6 +504,37 @@
       });
       // Cache-bust original once to avoid stale 404s
       img.src = original + (original.indexOf('?') === -1 ? '?v=' + Date.now() : '');
+    });
+  })();
+
+  // Animate timeline stages on scroll
+  (function(){
+    var stages = document.querySelectorAll('.pipeline .stage');
+    if(!('IntersectionObserver' in window) || !stages.length){
+      stages.forEach(function(s){ s.classList.add('in-view'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.2 });
+    stages.forEach(function(s){ io.observe(s); });
+  })();
+
+  // Header/footer brand logo fallback: try repo-prefixed path if relative fails (for GitHub Pages project sites)
+  (function(){
+    var logos = document.querySelectorAll('img.brand-logo');
+    logos.forEach(function(img){
+      var tried = false;
+      img.addEventListener('error', function onerr(){
+        if (tried) return;
+        tried = true;
+        var repo = (location.pathname.split('/')[1] || '').trim();
+        if (repo){
+          img.src = '/' + repo + '/assets/hsil-logo.png?v=' + Date.now();
+        }
+      }, { once:true });
     });
   })();
   </script>
