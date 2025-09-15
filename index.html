@@ -11,11 +11,11 @@
   <style>
     :root{
       /* Harvard/HSIL-inspired palette */
-      --crimson:#A41034;        /* Harvard Crimson */
-      --crimson-dark:#7A0019;   /* deeper accent */
-      --ink:#0f172a;            /* slate-900 */
-      --muted:#64748b;          /* slate-500 */
-      --ring:#e2e8f0;           /* light gray borders */
+      --crimson:#A41034;
+      --crimson-dark:#7A0019;
+      --ink:#0f172a;
+      --muted:#64748b;
+      --ring:#e2e8f0;
       --card:#ffffff;
       --cta:var(--crimson);
       --cta-ink:#ffffff;
@@ -71,7 +71,8 @@
     .foot{border-top:1px solid var(--ring);padding:36px 0;color:var(--muted)}
     .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     @media (min-width: 760px){.logos{grid-template-columns:repeat(4,1fr)}}
-    .logo{height:56px;border:1px dashed var(--ring);border-radius:14px;display:grid;place-items:center;color:var(--muted)}
+    .logo{height:56px;border:1px dashed var(--ring);border-radius:14px;display:grid;place-items:center;color:var(--muted);padding:.35rem}
+    .logo img{max-height:48px;max-width:100%;object-fit:contain}
     .minititle{font-size:.85rem;font-weight:700;color:#0b172a;text-transform:uppercase;letter-spacing:.06em}
     .note{font-size:.9rem;color:var(--muted)}
 
@@ -92,27 +93,22 @@
     .pyramid .row.bottom{grid-template-columns:repeat(1,1fr)}
     @media (min-width: 760px){.pyramid .row.bottom{grid-template-columns:repeat(3,1fr)}}
 
-    /* ===== Innovation Pipeline 2026 (timeline) ===== */
+    /* Innovation Pipeline 2026 (timeline) */
     :root{
-      --pipe-border:#1f2937;     /* slate-800 for outlines */
-      --pipe-line:#334155;       /* slate-700 for connectors */
-      --pipe-yellow:#f6b73c;     /* judging bars */
-      --pipe-green:#d9f7d9;      /* venture teams */
-      --blue-stage:#b8d0f7;      /* Bootcamps */
-      --purple-stage:#d7c2ea;    /* Venture Immersion */
-      --mint-stage:#bfe7e5;      /* Demo Day */
+      --pipe-border:#1f2937;
+      --pipe-line:#334155;
+      --pipe-yellow:#f6b73c;
+      --pipe-green:#d9f7d9;
+      --blue-stage:#b8d0f7;
+      --purple-stage:#d7c2ea;
+      --mint-stage:#bfe7e5;
     }
     .pipeline{position:relative;overflow-x:auto;padding-bottom:8px}
     .pipeline .stages{
-      display:grid;
-      grid-template-columns: repeat(5, 260px);
-      gap:28px; align-items:start;
-      min-width:max-content;
-      padding:6px 4px 0 4px;
+      display:grid;grid-template-columns: repeat(5, 260px);
+      gap:28px;align-items:start;min-width:max-content;padding:6px 4px 0 4px;
     }
-    @media (max-width: 900px){
-      .pipeline .stages{ grid-template-columns: repeat(5, 220px); gap:22px; }
-    }
+    @media (max-width: 900px){.pipeline .stages{grid-template-columns:repeat(5,220px);gap:22px}}
     .stage{position:relative;transition:transform .5s ease,opacity .5s ease;opacity:0;transform:translateY(16px)}
     .stage.in-view{opacity:1;transform:translateY(0)}
     .stage .duration{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:.35rem}
@@ -205,56 +201,38 @@
 
         <div class="pipeline" aria-label="Innovation Pipeline 2026">
           <div class="stages">
-
-            <!-- Stage 1 -->
             <div class="stage">
               <div class="duration"><span class="roman">I</span>2 Days</div>
               <div class="box">Hackathon</div>
               <div class="sub">Hub Judging</div>
               <div class="count">50 venture teams</div>
               <div class="date">10–11 April</div>
-              <div class="arrow" aria-hidden="true">
-                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
-              </div>
+              <div class="arrow" aria-hidden="true"><svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg></div>
             </div>
-
-            <!-- Stage 2 -->
             <div class="stage">
               <div class="duration"><span class="roman">II</span>4 Weeks</div>
               <div class="box boot">Bootcamp 1</div>
               <div class="sub">HSIL Judging</div>
               <div class="count">20 venture teams</div>
               <div class="date">20 Apr – 1 May</div>
-              <div class="arrow" aria-hidden="true">
-                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
-              </div>
+              <div class="arrow" aria-hidden="true"><svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg></div>
             </div>
-
-            <!-- Stage 3 -->
             <div class="stage">
               <div class="duration"><span class="roman">III</span>4 Weeks</div>
               <div class="box boot2">Bootcamp 2</div>
               <div class="sub">Global Judging</div>
               <div class="count">10 venture teams</div>
               <div class="date">4–15 May</div>
-              <div class="arrow" aria-hidden="true">
-                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
-              </div>
+              <div class="arrow" aria-hidden="true"><svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg></div>
             </div>
-
-            <!-- Stage 4 -->
             <div class="stage">
               <div class="duration"><span class="roman">III</span>4 Weeks</div>
               <div class="box immersion">Venture Building Immersion</div>
               <div class="sub">Global Judging</div>
               <div class="count">5 venture teams</div>
               <div class="date">18 May – 12 June</div>
-              <div class="arrow" aria-hidden="true">
-                <svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg>
-              </div>
+              <div class="arrow" aria-hidden="true"><svg viewBox="0 0 30 10"><path d="M1 5 L24 5 M20 1 L24 5 L20 9"/></svg></div>
             </div>
-
-            <!-- Stage 5 -->
             <div class="stage">
               <div class="duration"><span class="roman">IV</span>1 Day</div>
               <div class="box demo">Demo Day</div>
@@ -262,7 +240,6 @@
               <div class="count">—</div>
               <div class="date">19 June</div>
             </div>
-
           </div>
         </div>
       </div>
@@ -274,7 +251,6 @@
         <h2>Previous Hackathons</h2>
 
         <div class="pyramid" style="margin-top:12px">
-          <!-- Top row (2) -->
           <div class="row top">
             <div class="card">
               <h3 style="margin-top:0">2025</h3>
@@ -285,7 +261,6 @@
               <p class="muted">“Building High-Value Health Systems: Harnessing Digital Health and Artificial Intelligence”</p>
             </div>
           </div>
-          <!-- Bottom row (3) -->
           <div class="row bottom">
             <div class="card">
               <h3 style="margin-top:0">2023</h3>
@@ -304,6 +279,26 @@
         </div>
 
         <p class="note" style="margin-top:10px">In 2025, the HSIL Hackathon featured 100+ teams across 19 hubs worldwide.</p>
+      </div>
+    </section>
+
+    <!-- NEW: Sponsors list placed directly under Previous Hackathons -->
+    <section id="sponsors">
+      <div class="container">
+        <h2>Sponsors</h2>
+        <p class="lead">Organizations that supported HSIL Hackathons over the years.</p>
+        <div class="logos" style="margin-top:12px">
+          <!-- Add/replace logos below. If a file is missing, the name will show instead. -->
+          <div class="logo"><img class="logo-img" src="assets/sponsors/path.png" alt="PATH"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2025-sponsor1.png" alt="Past Sponsor 2025 — 1"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2025-sponsor2.png" alt="Past Sponsor 2025 — 2"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2024-sponsor1.png" alt="Past Sponsor 2024 — 1"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2024-sponsor2.png" alt="Past Sponsor 2024 — 2"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2023-sponsor1.png" alt="Past Sponsor 2023 — 1"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2022-sponsor1.png" alt="Past Sponsor 2022 — 1"></div>
+          <div class="logo"><img class="logo-img" src="assets/sponsors/past-2021-sponsor1.png" alt="Past Sponsor 2021 — 1"></div>
+        </div>
+        <p class="note" style="margin-top:.6rem">Drop new files in <code>assets/sponsors/</code> and replace the placeholders above.</p>
       </div>
     </section>
 
@@ -358,71 +353,44 @@
           <p class="note" style="margin-top:.6rem">Use your institution login (SSO) where required.</p>
         </div>
 
-        <!-- Logo grid -->
+        <!-- Logo grid (hubs) -->
         <div class="hub-grid" style="margin-top:14px">
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/boston-hsil.png" alt="HSIL Boston logo"></div><div><div style="font-weight:700">Boston, USA — HSIL</div><div class="note">North America Hub</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/boston/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/argentina-swiss-los-andes.png" alt="Swiss Medical Group / Universidad de los Andes logo"></div><div><div style="font-weight:700">Argentina</div><div class="note">Swiss Medical Group / Universidad de los Andes</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/argentina/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sydney-unsw.png" alt="UNSW logo"></div><div><div style="font-weight:700">Australia — Sydney</div><div class="note">UNSW</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sydney/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bangladesh-uiu.png" alt="United International University logo"></div><div><div style="font-weight:700">Bangladesh</div><div class="note">United International University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bangladesh/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/sao-paulo-fgv-innova-hc.png" alt="FGV / Innova HC logo"></div><div><div style="font-weight:700">Brazil — São Paulo</div><div class="note">Fundação Getulio Vargas (FGV) — Innova HC</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/sao-paulo/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/toronto-uoft-dlsph.png" alt="University of Toronto / Dalla Lana SPH logo"></div><div><div style="font-weight:700">Canada — Toronto</div><div class="note">University of Toronto / Dalla Lana SPH</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/toronto/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/santiago-puc-unab-ncrc.png" alt="Catholic University of Chile / NCRC / UNAB logos"></div><div><div style="font-weight:700">Chile — Santiago</div><div class="note">Catholic University of Chile / National Cancer Research Center / Universidad Andrés Bello</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/santiago/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/beijing-tsinghua.png" alt="Tsinghua University logo"></div><div><div style="font-weight:700">China — Beijing</div><div class="note">Tsinghua University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/beijing/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/bogota-rosario.png" alt="Universidad del Rosario logo"></div><div><div style="font-weight:700">Colombia — Bogotá</div><div class="note">Universidad del Rosario</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/bogota/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/punjab-iit-ropar.png" alt="IIT Ropar logo"></div><div><div style="font-weight:700">India — Punjab</div><div class="note">IIT Ropar</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/punjab/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/monterrey-unam.png" alt="UNAM logo"></div><div><div style="font-weight:700">Mexico — Monterrey</div><div class="note">National Autonomous University of Mexico (UNAM)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/monterrey/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/pakistan-nust-shs.png" alt="NUST School of Health Sciences logo"></div><div><div style="font-weight:700">Pakistan</div><div class="note">NUST School of Health Sciences</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/pakistan/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/saudi-mbsc-habib.png" alt="MBSC / Dr. Sulaiman Al Habib Medical Academy logos"></div><div><div style="font-weight:700">Saudi Arabia</div><div class="note">MBSC / Dr. Sulaiman Al Habib Medical Academy</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/saudi-arabia/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/singapore-ntu.png" alt="NTU logo"></div><div><div style="font-weight:700">Singapore</div><div class="note">Nanyang Technological University (NTU)</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/singapore/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/cape-town-uct.png" alt="University of Cape Town logo"></div><div><div style="font-weight:700">South Africa — Cape Town</div><div class="note">University of Cape Town</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/cape-town/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/johannesburg-wits.png" alt="University of the Witwatersrand logo"></div><div><div style="font-weight:700">South Africa — Johannesburg</div><div class="note">University of the Witwatersrand</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/johannesburg/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/istanbul-koc.png" alt="Koç University logo"></div><div><div style="font-weight:700">Türkiye — Istanbul</div><div class="note">Koç University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/istanbul/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/london-kcl.png" alt="King's College London logo"></div><div><div style="font-weight:700">UK — London</div><div class="note">King's College London</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/london/">Enter hub space</a></div></div></div>
-
           <div class="hub-card"><div class="hub-logo"><img src="assets/hubs/hanoi-hmu.png" alt="Hanoi Medical University logo"></div><div><div style="font-weight:700">Vietnam — Hanoi</div><div class="note">Hanoi Medical University</div><div class="hub-actions" style="margin-top:.5rem"><a class="btn" href="hubs/hanoi/">Enter hub space</a></div></div></div>
         </div>
 
-        <!-- Network partners / collaborators -->
+        <!-- UPDATED: Network partners include past sponsors -->
         <div class="card" style="margin-top:14px">
-          <div class="minititle">Network Partners</div>
+          <div class="minititle">Network Partners & Past Sponsors</div>
           <div class="logos" style="margin-top:12px">
-            <img class="logo" src="assets/hubs/partner-path.png" alt="PATH logo" style="object-fit:contain">
+            <!-- Use any logos from Collaborating/Network folder + past sponsors from prior years -->
+            <div class="logo"><img class="logo-img" src="assets/hubs/partner-path.png" alt="PATH"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2025-sponsor1.png" alt="Past Sponsor 2025 — 1"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2024-sponsor1.png" alt="Past Sponsor 2024 — 1"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2023-sponsor1.png" alt="Past Sponsor 2023 — 1"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2022-sponsor1.png" alt="Past Sponsor 2022 — 1"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2021-sponsor1.png" alt="Past Sponsor 2021 — 1"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2025-sponsor2.png" alt="Past Sponsor 2025 — 2"></div>
+            <div class="logo"><img class="logo-img" src="assets/sponsors/past-2024-sponsor2.png" alt="Past Sponsor 2024 — 2"></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PARTNERS / MENTORS -->
-    <section id="partners" style="background:#f8fafc">
-      <div class="container">
-        <h2>Partners & Mentors</h2>
-        <p class="lead">Featuring health systems, agencies, providers, payers, startups, research labs, and investors.</p>
-        <div class="logos" style="margin-top:12px">
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
-          <div class="logo">Logo</div>
+          <p class="note" style="margin-top:.6rem">Replace placeholders with real files in <code>assets/sponsors/</code> or <code>assets/hubs/</code>. Missing files will show the sponsor name.</p>
         </div>
       </div>
     </section>
@@ -502,7 +470,6 @@
           if(p){ p.textContent = 'Logo pending'; }
         }
       });
-      // Cache-bust original once to avoid stale 404s
       img.src = original + (original.indexOf('?') === -1 ? '?v=' + Date.now() : '');
     });
   })();
@@ -522,7 +489,19 @@
     stages.forEach(function(s){ io.observe(s); });
   })();
 
-  // Header/footer brand logo fallback: try repo-prefixed path if relative fails (for GitHub Pages project sites)
+  // Fallback for sponsor/partner logos: show the ALT text if the image is missing
+  (function(){
+    document.querySelectorAll('.logos img.logo-img').forEach(function(img){
+      img.setAttribute('loading','lazy');
+      img.setAttribute('decoding','async');
+      img.addEventListener('error', function(){
+        var wrap = img.closest('.logo');
+        if(wrap){ wrap.textContent = img.alt || 'Logo pending'; }
+      }, { once:true });
+    });
+  })();
+
+  // Header/footer brand logo fallback (GitHub Pages project sites)
   (function(){
     var logos = document.querySelectorAll('img.brand-logo');
     logos.forEach(function(img){
